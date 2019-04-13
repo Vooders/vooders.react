@@ -1,0 +1,12 @@
+{
+  "api": {
+    "port": 8080
+  },
+  "log": {
+    "name": "api.vooders.com",
+    "level": "info",
+    "streams": [{
+      "path": "/var/log/api.vooders.com/application.log"
+    }]
+  }
+}

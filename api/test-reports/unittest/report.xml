@@ -1,0 +1,136 @@
+<testsuites name="Mocha Tests">
+  <testsuite name="/status" tests="1" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.035">
+    <testcase classname="/status" name="should return &quot;OK&quot; and 200 status" time="0.032">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConfigurationLoader load" tests="7" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.011">
+    <testcase classname="ConfigurationLoader load" name="throws an error if no filename is provided" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationLoader load" name="calls the file reader with the correct path" time="0.004">
+    </testcase>
+    <testcase classname="ConfigurationLoader load" name="returns any errors from the file reader" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationLoader load" name="throws an error if the config file does not contain valid json" time="0">
+    </testcase>
+    <testcase classname="ConfigurationLoader load" name="calls the parser with the config file json content" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationLoader load" name="should return any errors from the parser function" time="0">
+    </testcase>
+    <testcase classname="ConfigurationLoader load" name="returns the result of the parser function" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConfigurationParser parse" tests="19" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.041">
+    <testcase classname="ConfigurationParser parse" name="fails if api config does not exist" time="0.004">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if api config is not a valid object" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if api port number does not exist" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if the api port is not a valid number" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log config does not exist" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log config is not a valid object" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log name does not exist" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log name is not a valid string" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log level does not exist" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log level is not a valid string" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log streams is provided but is not an array" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log streams is provided but is not an array of objects" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log streams provided do not contain a path" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if log streams paths provided are not valid strings" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if config contains unrecognised data" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if config contains unrecognised data in the api config" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="fails if config contains unrecognised data in the log config" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="returns a valid Configuration without when it does not contain log streams" time="0">
+    </testcase>
+    <testcase classname="ConfigurationParser parse" name="returns a valid Configuration when it contains log streams" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="SerialisingLogger fatal" tests="3" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.008">
+    <testcase classname="SerialisingLogger fatal" name="should call the wrapped logger with no arguments if none are provided" time="0.003">
+    </testcase>
+    <testcase classname="SerialisingLogger fatal" name="should call the serialiser for each of the supplied arguments" time="0.003">
+    </testcase>
+    <testcase classname="SerialisingLogger fatal" name="should call the wrapped logger with the serialised arguments" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="SerialisingLogger error" tests="3" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.035">
+    <testcase classname="SerialisingLogger error" name="should call the wrapped logger with no arguments if none are provided" time="0">
+    </testcase>
+    <testcase classname="SerialisingLogger error" name="should call the serialiser for each of the supplied arguments" time="0.001">
+    </testcase>
+    <testcase classname="SerialisingLogger error" name="should call the wrapped logger with the serialised arguments" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="SerialisingLogger warn" tests="3" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.004">
+    <testcase classname="SerialisingLogger warn" name="should call the wrapped logger with no arguments if none are provided" time="0.001">
+    </testcase>
+    <testcase classname="SerialisingLogger warn" name="should call the serialiser for each of the supplied arguments" time="0.002">
+    </testcase>
+    <testcase classname="SerialisingLogger warn" name="should call the wrapped logger with the serialised arguments" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="SerialisingLogger info" tests="3" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.002">
+    <testcase classname="SerialisingLogger info" name="should call the wrapped logger with no arguments if none are provided" time="0.001">
+    </testcase>
+    <testcase classname="SerialisingLogger info" name="should call the serialiser for each of the supplied arguments" time="0">
+    </testcase>
+    <testcase classname="SerialisingLogger info" name="should call the wrapped logger with the serialised arguments" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="SerialisingLogger debug" tests="3" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.002">
+    <testcase classname="SerialisingLogger debug" name="should call the wrapped logger with no arguments if none are provided" time="0">
+    </testcase>
+    <testcase classname="SerialisingLogger debug" name="should call the serialiser for each of the supplied arguments" time="0">
+    </testcase>
+    <testcase classname="SerialisingLogger debug" name="should call the wrapped logger with the serialised arguments" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="SerialisingLogger trace" tests="3" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.056">
+    <testcase classname="SerialisingLogger trace" name="should call the wrapped logger with no arguments if none are provided" time="0">
+    </testcase>
+    <testcase classname="SerialisingLogger trace" name="should call the serialiser for each of the supplied arguments" time="0.005">
+    </testcase>
+    <testcase classname="SerialisingLogger trace" name="should call the wrapped logger with the serialised arguments" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="LoggingSerialiser serialise" tests="12" errors="0" failures="0" skipped="0" timestamp="2019-04-13T15:40:31" time="0.016">
+    <testcase classname="LoggingSerialiser serialise" name="return undefined if supplied with undefined" time="0">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns null if supplied with null" time="0">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns the provided value if it has no stack" time="0">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns the provided value if supplied with a string" time="0">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns the provided value if supplied with a number" time="0">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns the provided value if supplied with an array" time="0">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns an object when provided with an error" time="0.003">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns an object containing the message when provided with an error" time="0.001">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns an object containing the name when provided with an error" time="0.007">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns an object containing any additional error properties" time="0.001">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="returns an object containing the stack when provided with an error" time="0">
+    </testcase>
+    <testcase classname="LoggingSerialiser serialise" name="serialises any nested errors in the provided error" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
