@@ -1,9 +1,14 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export function RouterTest() {
   return (
-    <div>
-      <h1>Test</h1>
-    </div>
+    <>
+      <Container>
+        <Row>
+          <Col><h1>Test</h1></Col>
+        </Row>
+      </Container>
+    </>
   )
 }
