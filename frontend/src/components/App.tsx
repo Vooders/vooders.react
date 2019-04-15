@@ -6,17 +6,19 @@ import { NavBar } from './NavBar'
 
 const siteName = "Vooders.com"
 
-export default function App() {
-  return (
-    <Router>
-      <div>
-        <NavBar name={siteName} />
+export default class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <NavBar name={siteName} />
 
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/test' component={RouterTest} />
-        </Switch>
-      </div>
-    </Router>
-  )
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/test' component={RouterTest} />
+          </Switch>
+        </div>
+      </Router>
+    )
+  }
 }

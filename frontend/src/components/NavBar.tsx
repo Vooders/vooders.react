@@ -7,14 +7,12 @@ interface NavBarProps {
 }
 
 export class NavBar extends React.Component<NavBarProps> {
-  constructor (props: any) {
-    super(props)
-  }
-
   render () {
     return (
       <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand href="/">{ this.props.name }</Navbar.Brand>
+        <Link to={'/'}>
+          <Navbar.Brand>{ this.props.name }</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
