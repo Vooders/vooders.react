@@ -1,5 +1,5 @@
 import React from 'react'
-import { Alert, Jumbotron, Container, Row, Col } from 'react-bootstrap'
+import { Alert, Button, Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 interface ErrorsProps {
@@ -20,7 +20,14 @@ export class Errors extends React.Component<ErrorsProps> {
               </p>
               <hr />
               <p className="mb-0">
-                Oops, something has gone wrong! Head <Link to={'/'}>home</Link>
+                Oops, something has gone wrong!
+                <div className="d-flex justify-content-end">
+                  <Link to={'/'}>
+                    <Button variant="outline-danger">
+                      Take me home
+                    </Button>
+                  </Link>
+                </div>
               </p>
             </Alert>
           </Col>
