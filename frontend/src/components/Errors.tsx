@@ -13,17 +13,17 @@ export class Errors extends React.Component<ErrorsProps> {
       <Container>
         <Row className='mt-5'>
           <Col>
-            <Alert variant="danger">
+            <Alert variant='danger'>
               <Alert.Heading>{ this.props.code }</Alert.Heading>
               <p>
                 { this.props.message }
               </p>
               <hr />
-              <p className="mb-0">
+              <p className='mb-0'>
                 Oops, something has gone wrong!
-                <div className="d-flex justify-content-end">
+                <div className='d-flex justify-content-end'>
                   <Link to={'/'}>
-                    <Button variant="outline-danger">
+                    <Button variant='outline-danger'>
                       Take me home
                     </Button>
                   </Link>

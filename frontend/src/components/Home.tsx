@@ -6,7 +6,7 @@ export class Home extends React.Component {
     return (
       <>
         <Container>
-          <Row>
+          <Row className='mt-5'>
             <Col><h1>Home</h1></Col>
           </Row>
         </Container>
