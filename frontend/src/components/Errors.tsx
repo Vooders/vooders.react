@@ -1,5 +1,6 @@
 import React from 'react'
-import { Jumbotron, Container, Row, Col } from 'react-bootstrap'
+import { Alert, Jumbotron, Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 interface ErrorsProps {
   code: number,
@@ -12,12 +13,16 @@ export class Errors extends React.Component<ErrorsProps> {
       <Container>
         <Row className='mt-5'>
           <Col>
-            <Jumbotron>
-              <h1>{ this.props.code }</h1>
+            <Alert variant="danger">
+              <Alert.Heading>{ this.props.code }</Alert.Heading>
               <p>
                 { this.props.message }
               </p>
-            </Jumbotron>
+              <hr />
+              <p className="mb-0">
+                Oops, something has gone wrong! Head <Link to={'/'}>home</Link>
+              </p>
+            </Alert>
           </Col>
         </Row>
       </Container>
