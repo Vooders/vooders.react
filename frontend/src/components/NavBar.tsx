@@ -10,9 +10,7 @@ export class NavBar extends React.Component<NavBarProps> {
   render () {
     return (
       <Navbar bg='dark' variant='dark' expand='lg'>
-        <Link to={'/'}>
-          <Navbar.Brand>{ this.props.name }</Navbar.Brand>
-        </Link>
+        <Navbar.Brand>{ this.props.name }</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='mr-auto'>
