@@ -1,5 +1,6 @@
 dist/
 test-reports/
+jsonOut.json
 
 # Logs
 logs
