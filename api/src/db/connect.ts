@@ -1,6 +1,6 @@
-import * as mongoose  from 'mongoose'
+import * as mongoose from 'mongoose'
 
-const mongo_uri = 'mongodb://localhost:27017/users'
+const mongo_uri = 'mongodb://localhost/api'
 
 async function connect () {
   try {

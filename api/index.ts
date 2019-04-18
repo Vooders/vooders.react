@@ -13,7 +13,6 @@ const config: Configuration = configurationLoader.load('app')
 
 const numberOfWorkers = cpus().length
 
-console.log(config.log)
 const bunyan: Bunyan = Bunyan.createLogger(config.log)
 const logger = new SerialisingLogger(bunyan, LoggingSerialiser)
 
