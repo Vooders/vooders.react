@@ -34,7 +34,9 @@ describe.only('Transform', () => {
   verify.it('simplifyForces() should simplify the array', Gen.array(Gen.object, 3), (forces) => {
     const orig = {
       roster: {
-        forces: [{ force: forces }]
+        forces: [{ 
+          force: forces 
+        }]
       }
     }
     const expected = {
@@ -46,7 +48,9 @@ describe.only('Transform', () => {
   verify.it('renameForceMeta() should rename $ to meta', Gen.object, (forceMeta) => {
     const orig = {
       roster: {
-        forces: [{ $: forceMeta }]
+        forces: [{ 
+          $: forceMeta 
+        }]
       }
     }
     const expected = {
@@ -57,25 +61,25 @@ describe.only('Transform', () => {
     Transform.create(orig).renameForceMeta().done().should.eql(expected)
   })
 
-  verify.it('simplifyForcesSelections() should simplify the array', Gen.array(Gen.object, 3), (forceSelections) => {
-    const orig = {
-      roster: {
-        forces: [{ 
-          selections: [{
-            selection: forceSelections
-          }]
-        }]
-      }
-    }
-    const expected = {
-      roster: {
-        forces: [{
-          selections: forceSelections 
-        }]
-      }
-    }
-    Transform.create(orig).simplifyForcesSelections().done().should.eql(expected)
-  })
+  // verify.it('simplifyForcesSelections() should simplify the array', Gen.array(Gen.object, 3), (forceSelections) => {
+  //   const orig = {
+  //     roster: {
+  //       forces: [{ 
+  //         selections: [{
+  //           selection: forceSelections
+  //         }]
+  //       }]
+  //     }
+  //   }
+  //   const expected = {
+  //     roster: {
+  //       forces: [{
+  //         selections: forceSelections 
+  //       }]
+  //     }
+  //   }
+  //   Transform.create(orig).simplifyForcesSelections().done().should.eql(expected)
+  // })
 
   verify.it('renameForceSelectionMeta() should rename $ to meta', Gen.object, (forceSelectionMeta) => {
     const orig = {
