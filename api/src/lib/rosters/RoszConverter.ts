@@ -8,8 +8,8 @@ import { JsonTransformer } from './JsonTransformer'
 // const dbName = 'api'
 
 
-const dir = '/home/vooders/BattleScribe/rosters/'
-const filename = 'death-guard-1.4k-v2.rosz'
+const dir = '/home/vooders/BattleScribe/'
+const filename = 'Daemon-3k.rosz'
 
 
 async function convertAndSave () {

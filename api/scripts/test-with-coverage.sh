@@ -11,4 +11,4 @@ nyc \
     --require source-map-support/register \
     --recursive \
     --reporter mocha-jenkins-reporter \
-    dist/test/TestConfiguration.js dist/test/*Spec.js dist/test/**/*Spec.js
+    dist/test/TestConfiguration.js dist/test/*Spec.js dist/test/**/*Spec.js dist/test/**/**/*Spec.js
