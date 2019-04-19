@@ -1,12 +1,9 @@
 export class JsonTransformer {
   static transform (roster: any) {
-    return Transform.create(roster)
+    return RosterTransformer.create(roster)
       .transformRoot()
       .simplifyCosts()
-      .simplifyForces()
-      .renameForceMeta()
-      .simplifyForcesSelections()
-      .renameForceSelectionMeta()
+      .transformForces()
       .done()
   }
 }
@@ -29,20 +26,9 @@ const replaceValue = (
   }
 }
 
-const simplifyArray = (arr: any[], key: string) => {
-  return arr[0][key].map((selection: any) => selection)
-}
-
-const deepSimplify = (arr: any[], plural: string, singular: string ) => {
-  return arr.map((element: any) => {
-    const simplified = simplifyArray(element[plural], singular)
-    return replaceValue(plural, simplified, element)
-  })
-}
-
-export class Transform {
+export class RosterTransformer {
   static create (ros: any) {
-    return new Transform(ros.roster)
+    return new RosterTransformer(ros.roster)
   }
 
   done () {
@@ -50,12 +36,12 @@ export class Transform {
   }
 
   private constructor (
-    public rosterData: any = {}
+    private readonly rosterData: any = {}
   ) {}
 
   transformRoot () {
     const newRos = renameKey('$', 'meta', this.rosterData)
-    return new Transform(newRos)
+    return new RosterTransformer(newRos)
   }
 
   simplifyCosts () {
@@ -63,37 +49,80 @@ export class Transform {
       return cost.cost.map((c: any) => c.$)
     })
     const newRos = replaceValue('costs', costs[0], this.rosterData)
-    return new Transform(newRos)
+    return new RosterTransformer(newRos)
   }
 
-  simplifyForces () {
-    const forces = simplifyArray(this.rosterData.forces, 'force')
+  transformForces () {
+    const forces = ForcesTransformer.create(this.rosterData.forces)
+      .simplify()
+      .renameMeta()
+      .transformSelections()
+      .done()
     const newRos = replaceValue('forces', forces, this.rosterData)
-    return new Transform(newRos)
+    return new RosterTransformer(newRos)
+  }
+}
+
+export class ForcesTransformer {
+  private constructor (
+    private readonly forcesData: any = []
+  ) {}
+
+  static create (input: any) {
+    return new ForcesTransformer(input)
   }
 
-  renameForceMeta () {
-    const forces = this.rosterData.forces.map((force: any) => {
+  done () {
+    return this.forcesData
+  }
+
+  simplify () {
+    const forces = this.forcesData[0].force.map((force: any) => force)
+    return new ForcesTransformer(forces)
+  }
+
+  renameMeta () {
+    const forces = this.forcesData.map((force: any) => {
       return renameKey('$', 'meta', force)
     })
-    const newRos = replaceValue('forces', forces, this.rosterData)
-    return new Transform(newRos)
+    return new ForcesTransformer(forces)
   }
 
-  simplifyForcesSelections () {
-    const forces = deepSimplify(this.rosterData.forces, 'selections', 'selection')
-    const newRos = replaceValue('forces', forces, this.rosterData)
-    return new Transform(newRos)
-  }
-
-  renameForceSelectionMeta () {
-    const forces = this.rosterData.forces.map((force: any) => {
-      const selections = force.selections.map((selection: any) => {
-        return renameKey('$', 'meta', selection)
+  transformSelections () {
+    console.log(JSON.stringify(this.forcesData, null, 2))
+    const forces = this.forcesData.map((force: any) => {
+      return ForceSelectionTransformer.create(force.selections)
+        .simplify()
+        .renameMeta()
+        .done()
       })
-      return replaceValue('selections', selections, force)
+    const newRos = replaceValue('selections', forces, this.forcesData)
+    return new ForcesTransformer(newRos)
+  }
+}
+
+export class ForceSelectionTransformer {
+  private constructor (
+    private readonly forcesSelectionsData: any = []
+  ) {}
+
+  static create (input: any) {
+    return new ForceSelectionTransformer(input)
+  }
+
+  done () {
+    return this.forcesSelectionsData
+  }
+
+  simplify () {
+    const selections = this.forcesSelectionsData[0].selection.map((selection: any) => selection)
+    return new ForceSelectionTransformer(selections)
+  }
+
+  renameMeta () {
+    const selections = this.forcesSelectionsData.map((selection: any) => {
+      return renameKey('$', 'meta', selection)
     })
-    const newRos = replaceValue('forces', forces, this.rosterData)
-    return new Transform(newRos)
+    return new ForceSelectionTransformer(selections)
   }
 }

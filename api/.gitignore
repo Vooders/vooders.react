@@ -2,6 +2,7 @@ dist/
 test-reports/
 jsonOut.json
 jsonOutSaved.json
+unmodifiedJson.json
 
 # Logs
 logs
