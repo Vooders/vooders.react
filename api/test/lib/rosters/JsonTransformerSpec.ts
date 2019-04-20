@@ -40,7 +40,7 @@ describe.only('JsonTransformer', () => {
       ForcesTransformer.create(orig).simplify().done().should.eql(forces)
     })
 
-    verify.it('renameForceMeta() should rename $ to meta', Gen.object, (forceMeta) => {
+    verify.it('renameMeta() should rename $ to meta', Gen.object, (forceMeta) => {
       const orig = [{ $: forceMeta }]
       const expected = [{ meta: forceMeta }]
 

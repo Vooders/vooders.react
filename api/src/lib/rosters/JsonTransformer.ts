@@ -26,6 +26,10 @@ const replaceValue = (
   }
 }
 
+// const simplifyArray = (arr: any[], key: string) => {
+//   return arr[0][key].map((selection: any) => selection)
+// }
+
 export class RosterTransformer {
   static create (ros: any) {
     return new RosterTransformer(ros.roster)
@@ -58,6 +62,7 @@ export class RosterTransformer {
       .renameMeta()
       .transformSelections()
       .done()
+
     const newRos = replaceValue('forces', forces, this.rosterData)
     return new RosterTransformer(newRos)
   }
@@ -82,22 +87,22 @@ export class ForcesTransformer {
   }
 
   renameMeta () {
-    const forces = this.forcesData.map((force: any) => {
-      return renameKey('$', 'meta', force)
-    })
+    const forces = this.forcesData.map((force: any) => renameKey('$', 'meta', force))
     return new ForcesTransformer(forces)
   }
 
   transformSelections () {
-    console.log(JSON.stringify(this.forcesData, null, 2))
-    const forces = this.forcesData.map((force: any) => {
-      return ForceSelectionTransformer.create(force.selections)
+    const selections = this.forcesData.map((force: any) => {
+      const sel = ForceSelectionTransformer.create(force.selections)
         .simplify()
         .renameMeta()
+        .simplifySelections()
+        .simplifyRules()
         .done()
-      })
-    const newRos = replaceValue('selections', forces, this.forcesData)
-    return new ForcesTransformer(newRos)
+      const bob =  replaceValue('selections', sel, force)
+      return renameKey('selections', 'forceSelections', bob)
+    })
+    return new ForcesTransformer(selections)
   }
 }
 
@@ -115,7 +120,7 @@ export class ForceSelectionTransformer {
   }
 
   simplify () {
-    const selections = this.forcesSelectionsData[0].selection.map((selection: any) => selection)
+    const selections = this.forcesSelectionsData[0].selection.map((forceSelection: any) => forceSelection)
     return new ForceSelectionTransformer(selections)
   }
 
@@ -124,5 +129,27 @@ export class ForceSelectionTransformer {
       return renameKey('$', 'meta', selection)
     })
     return new ForceSelectionTransformer(selections)
+  }
+
+  simplifySelections () {
+    const simpleSelections = this.forcesSelectionsData.map((forceSelection: any) => {
+      const selections = forceSelection.selections[0].selection.map((element: any) => element)
+      const sel = replaceValue('selections', selections, forceSelection)
+      return renameKey('selections', 'modelSelections', sel)
+    })
+    return new ForceSelectionTransformer(simpleSelections)
+  }
+
+  simplifyRules () {
+    const bob = this.forcesSelectionsData.map((forceSelection: any) => {
+      this.log(forceSelection)
+      const rules = forceSelection.rules[0].rule.map((element: any) => element)
+      return replaceValue('rules', rules, forceSelection)
+    })
+    return new ForceSelectionTransformer(bob)
+  }
+
+  log (msg: any) {
+    console.log('log:', JSON.stringify(msg, null, 2))
   }
 }
