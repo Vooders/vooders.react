@@ -1,155 +1,98 @@
 export class JsonTransformer {
-  static transform (roster: any) {
-    return RosterTransformer.create(roster)
-      .transformRoot()
-      .simplifyCosts()
-      .transformForces()
-      .done()
+  static transform (data: any) {
+    const rosData = data.roster
+    const transformedJson = {
+      meta: rosData.$,
+      costs: simplifyDollarArray(rosData.costs, 'cost'),
+      detachments: this.transformDetachments(rosData.forces[0].force || []) 
+    }
+    console.log(JSON.stringify(transformedJson, null, 2))
+    return transformedJson
+  }
+
+  private static transformDetachments (forcesArray: any[]) {
+    const forces = forcesArray.map((force: any) => {
+      return {
+        meta: force.$,
+        units: this.transformUnits(force.selections[0].selection || [])
+      }
+    })
+    // console.log(JSON.stringify(forces, null, 2))
+    return forces
+  }
+
+  private static transformUnits (unitsArray: any[]) {
+    const units = unitsArray.map((unit: any) => {
+      return {
+        meta: unit.$,
+        rules: this.transformUintRules(unit.rules[0].rule || []),
+        profiles: this.transformUnitProfiles(unit.profiles[0].profile || []),
+        weapons: this.transformWeapons(unit.selections[0].selection || []),
+        costs: simplifyDollarArray(unit.costs, 'cost'),
+        keywords: this.transformUnitKeywords(unit.categories[0].category || [])
+      }
+    })
+    // console.log(JSON.stringify(units, null, 2))
+    return units
+  }
+
+  private static transformUintRules (unitRulesArray: any[]) {
+    const unitRules = unitRulesArray.map((unitRule) => {
+      return {
+        name: unitRule.$.name,
+        description: unitRule.description[0]
+      }
+    })
+    return unitRules
+  }
+
+  private static transformUnitProfiles (unitProfilesArray: any[]) {
+    const unitProfiles = unitProfilesArray.map((unitProfile: any) => {
+      return {
+        meta: unitProfile.$,
+        characteristics: simplifyDollarArray(unitProfile.characteristics, 'characteristic')
+      }
+    })
+    // console.log(JSON.stringify(unitProfiles, null, 2))
+    return unitProfiles
+  }
+
+  private static transformUnitKeywords (unitKeywordsArray: any[]) {
+    const unitKeywords = unitKeywordsArray.map((keyword: any) =>{
+      return {
+        name: keyword.$.name
+      }
+    })
+    return unitKeywords
+  }
+
+  private static transformWeapons (unitWeaponsArray: any[]) {
+    const unitWeapons = unitWeaponsArray.map((unitWeapon) => {
+      // console.log(JSON.stringify(unitWeapon.profiles[0].profile, null, 2))
+      return {
+        meta: unitWeapon.$,
+        profiles: this.transformWeaponProfiles(unitWeapon.profiles[0].profile || []),
+        selections: unitWeapon.selections[0].selection || [],
+        costs: simplifyDollarArray(unitWeapon.costs, 'cost'),
+        categories: unitWeapon.categories[0].category || []
+      }
+    })
+    // console.log(JSON.stringify(unitWeapons, null, 2))
+    return unitWeapons
+  }
+
+  private static transformWeaponProfiles (weaponProfilesArray: any) {
+    const weaponProfiles = weaponProfilesArray.map((weaponProfile: any) => {
+      return {
+        meta: weaponProfile.$,
+        characteristics: simplifyDollarArray(weaponProfile.characteristics, 'characteristic')
+      }
+    })
+    // console.log(JSON.stringify(weaponProfiles, null, 2))
+    return weaponProfiles
   }
 }
 
-const renameKey = (
-  oldKey: string, newKey: string, { [oldKey]: old, ...others }
-) => {
-  return {
-    [newKey]: old,
-    ...others
-  }
-}
-
-const replaceValue = (
-  key: string, newValue: any, { [key]: old, ...others }
-) => {
-  return {
-    [key]: newValue,
-    ...others
-  }
-}
-
-// const simplifyArray = (arr: any[], key: string) => {
-//   return arr[0][key].map((selection: any) => selection)
-// }
-
-export class RosterTransformer {
-  static create (ros: any) {
-    return new RosterTransformer(ros.roster)
-  }
-
-  done () {
-    return { roster: this.rosterData }
-  }
-
-  private constructor (
-    private readonly rosterData: any = {}
-  ) {}
-
-  transformRoot () {
-    const newRos = renameKey('$', 'meta', this.rosterData)
-    return new RosterTransformer(newRos)
-  }
-
-  simplifyCosts () {
-    const costs = this.rosterData.costs.map((cost: any) => {
-      return cost.cost.map((c: any) => c.$)
-    })
-    const newRos = replaceValue('costs', costs[0], this.rosterData)
-    return new RosterTransformer(newRos)
-  }
-
-  transformForces () {
-    const forces = ForcesTransformer.create(this.rosterData.forces)
-      .simplify()
-      .renameMeta()
-      .transformSelections()
-      .done()
-
-    const newRos = replaceValue('forces', forces, this.rosterData)
-    return new RosterTransformer(newRos)
-  }
-}
-
-export class ForcesTransformer {
-  private constructor (
-    private readonly forcesData: any = []
-  ) {}
-
-  static create (input: any) {
-    return new ForcesTransformer(input)
-  }
-
-  done () {
-    return this.forcesData
-  }
-
-  simplify () {
-    const forces = this.forcesData[0].force.map((force: any) => force)
-    return new ForcesTransformer(forces)
-  }
-
-  renameMeta () {
-    const forces = this.forcesData.map((force: any) => renameKey('$', 'meta', force))
-    return new ForcesTransformer(forces)
-  }
-
-  transformSelections () {
-    const selections = this.forcesData.map((force: any) => {
-      const sel = ForceSelectionTransformer.create(force.selections)
-        .simplify()
-        .renameMeta()
-        .simplifySelections()
-        .simplifyRules()
-        .done()
-      const bob =  replaceValue('selections', sel, force)
-      return renameKey('selections', 'forceSelections', bob)
-    })
-    return new ForcesTransformer(selections)
-  }
-}
-
-export class ForceSelectionTransformer {
-  private constructor (
-    private readonly forcesSelectionsData: any = []
-  ) {}
-
-  static create (input: any) {
-    return new ForceSelectionTransformer(input)
-  }
-
-  done () {
-    return this.forcesSelectionsData
-  }
-
-  simplify () {
-    const selections = this.forcesSelectionsData[0].selection.map((forceSelection: any) => forceSelection)
-    return new ForceSelectionTransformer(selections)
-  }
-
-  renameMeta () {
-    const selections = this.forcesSelectionsData.map((selection: any) => {
-      return renameKey('$', 'meta', selection)
-    })
-    return new ForceSelectionTransformer(selections)
-  }
-
-  simplifySelections () {
-    const simpleSelections = this.forcesSelectionsData.map((forceSelection: any) => {
-      const selections = forceSelection.selections[0].selection.map((element: any) => element)
-      const sel = replaceValue('selections', selections, forceSelection)
-      return renameKey('selections', 'modelSelections', sel)
-    })
-    return new ForceSelectionTransformer(simpleSelections)
-  }
-
-  simplifyRules () {
-    const bob = this.forcesSelectionsData.map((forceSelection: any) => {
-      this.log(forceSelection)
-      const rules = forceSelection.rules[0].rule.map((element: any) => element)
-      return replaceValue('rules', rules, forceSelection)
-    })
-    return new ForceSelectionTransformer(bob)
-  }
-
-  log (msg: any) {
-    console.log('log:', JSON.stringify(msg, null, 2))
-  }
+const simplifyDollarArray = (arr: any[], key: string) => {
+  return arr[0][key].map((ele: any) => ele.$)
 }
