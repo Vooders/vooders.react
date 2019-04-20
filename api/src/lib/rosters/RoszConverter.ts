@@ -1,6 +1,7 @@
 import * as decompress from 'decompress'
 import { Xml2Json } from './Xml2Json'
-import { JsonTransformer } from './JsonTransformer'
+import { JsonTransformer2 } from './JsonTransformer2'
+// import { JsonTransformer } from './JsonTransformer'
 // import * as assert from 'assert'
 // import { MongoClient } from 'mongodb'
 
@@ -8,15 +9,15 @@ import { JsonTransformer } from './JsonTransformer'
 // const dbName = 'api'
 
 
-const dir = '/home/vooders/BattleScribe/'
-const filename = 'Daemon-3k.rosz'
+const dir = '/Users/wilsok23/development/personal/vooders.react/api/rosters/'
+const filename = 'Daemon3k.rosz'
 
 
 async function convertAndSave () {
   try {
     const file = await decompress(`${dir}${filename}`)
     const json = await Xml2Json.parseBuffer(file[0].data)
-    const transformedJson = JsonTransformer.transform(json)
+    const transformedJson = JsonTransformer2.transform(json)
     console.log(JSON.stringify(transformedJson, null, 2))
   } catch(error) {
     console.log(error)
