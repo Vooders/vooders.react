@@ -10,7 +10,7 @@ import { JsonTransformer } from './JsonTransformer'
 
 
 const dir = '/Users/wilsok23/development/personal/vooders.react/api/rosters/'
-const filename = 'Daemon3k.rosz'
+const filename = 'death-guard-sorcerer-1.4k.rosz'
 
 
 async function convertAndSave () {
@@ -18,8 +18,7 @@ async function convertAndSave () {
     const file = await decompress(`${dir}${filename}`)
     const json = await Xml2Json.parseBuffer(file[0].data)
     const transformedJson = JsonTransformer.transform(json)
-    // console.log(JSON.stringify(transformedJson, null, 2))
-    console.log(transformedJson)
+    console.log(JSON.stringify(transformedJson, null, 2))
   } catch(error) {
     console.log(error)
   }
