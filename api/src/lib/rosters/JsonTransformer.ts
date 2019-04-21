@@ -3,10 +3,10 @@ export class JsonTransformer {
     const rosData = data.roster
     const transformedJson = {
       meta: rosData.$,
-      costs: simplifyDollarArray(rosData.costs, 'cost'),
+      costs: this.transformCosts(rosData.costs[0].cost || []),
       detachments: this.transformDetachments(rosData.forces[0].force || []) 
     }
-    console.log(JSON.stringify(transformedJson, null, 2))
+    // console.log(JSON.stringify(transformedJson, null, 2))
     return transformedJson
   }
 
@@ -25,71 +25,64 @@ export class JsonTransformer {
     const units = unitsArray.map((unit: any) => {
       return {
         meta: unit.$,
-        rules: this.transformUintRules(unit.rules[0].rule || []),
-        profiles: this.transformUnitProfiles(unit.profiles[0].profile || []),
-        weapons: this.transformWeapons(unit.selections[0].selection || []),
-        costs: simplifyDollarArray(unit.costs, 'cost'),
-        keywords: this.transformUnitKeywords(unit.categories[0].category || [])
+        rules: this.transformRules(unit.rules[0].rule || []),
+        profiles: this.transformProfiles(unit.profiles[0].profile || []),
+        selections: this.transformSelections(unit.selections[0].selection || []),
+        costs: this.transformCosts(unit.costs[0].cost || []),
+        categories: this.transformCategories(unit.categories[0].category || [])
       }
     })
-    // console.log(JSON.stringify(units, null, 2))
+    console.log(JSON.stringify(units, null, 2))
     return units
   }
 
-  private static transformUintRules (unitRulesArray: any[]) {
-    const unitRules = unitRulesArray.map((unitRule) => {
+  private static transformCategories (categoriesArray: any[]) {
+    const categories = categoriesArray.map((category: any) =>{
       return {
-        name: unitRule.$.name,
-        description: unitRule.description[0]
+        name: category.$.name
       }
     })
-    return unitRules
+    return categories
   }
 
-  private static transformUnitProfiles (unitProfilesArray: any[]) {
-    const unitProfiles = unitProfilesArray.map((unitProfile: any) => {
+  private static transformSelections (selectionsArray: any[]): any[] {
+    const selections = selectionsArray.map((selection) => {
+      // console.log(JSON.stringify(unitWeapon.profiles[0].profile, null, 2))
       return {
-        meta: unitProfile.$,
-        characteristics: simplifyDollarArray(unitProfile.characteristics, 'characteristic')
+        meta: selection.$,
+        profiles: this.transformProfiles(selection.profiles[0].profile || []),
+        selections: (selection.selections.length > 0) ? this.transformSelections(selection.selections[0].selection || []) : [],
+        costs: this.transformCosts(selection.costs[0].cost || []),
+        categories: this.transformCategories(selection.categories[0].category || [])
+      }
+    })
+    // console.log(JSON.stringify(selections, null, 2))
+    return selections
+  }
+
+  private static transformCosts (costsArray: any[]) {
+    return costsArray.map((cost: any) => cost.$)
+  }
+
+  private static transformRules (rulesArray: any[]) {
+    const rules = rulesArray.map((rule) => {
+      return {
+        name: rule.$.name,
+        description: rule.description[0]
+      }
+    })
+    return rules
+  }
+
+  private static transformProfiles (profilesArray: any[]) {
+    const profiles = profilesArray.map((profile: any) => {
+      return {
+        meta: profile.$,
+        characteristics: simplifyDollarArray(profile.characteristics, 'characteristic')
       }
     })
     // console.log(JSON.stringify(unitProfiles, null, 2))
-    return unitProfiles
-  }
-
-  private static transformUnitKeywords (unitKeywordsArray: any[]) {
-    const unitKeywords = unitKeywordsArray.map((keyword: any) =>{
-      return {
-        name: keyword.$.name
-      }
-    })
-    return unitKeywords
-  }
-
-  private static transformWeapons (unitWeaponsArray: any[]) {
-    const unitWeapons = unitWeaponsArray.map((unitWeapon) => {
-      // console.log(JSON.stringify(unitWeapon.profiles[0].profile, null, 2))
-      return {
-        meta: unitWeapon.$,
-        profiles: this.transformWeaponProfiles(unitWeapon.profiles[0].profile || []),
-        selections: unitWeapon.selections[0].selection || [],
-        costs: simplifyDollarArray(unitWeapon.costs, 'cost'),
-        categories: unitWeapon.categories[0].category || []
-      }
-    })
-    // console.log(JSON.stringify(unitWeapons, null, 2))
-    return unitWeapons
-  }
-
-  private static transformWeaponProfiles (weaponProfilesArray: any) {
-    const weaponProfiles = weaponProfilesArray.map((weaponProfile: any) => {
-      return {
-        meta: weaponProfile.$,
-        characteristics: simplifyDollarArray(weaponProfile.characteristics, 'characteristic')
-      }
-    })
-    // console.log(JSON.stringify(weaponProfiles, null, 2))
-    return weaponProfiles
+    return profiles
   }
 }
 

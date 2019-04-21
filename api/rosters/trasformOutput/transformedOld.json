@@ -1,0 +1,5703 @@
+[
+  {
+    "meta": {
+      "id": "dba9-dfcf-95a9-670e",
+      "name": "Nurgle",
+      "entryId": "26ee-47bc-1997-a2f9::4a74-3874-4059-d979",
+      "entryGroupId": "26ee-47bc-1997-a2f9::f290-028f-25e9-1984",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "26ee-47bc-1997-a2f9::5e6e-07f4-eaff-1ae8",
+          "name": "Locus of Virulence",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "CHARACTERS in a NURGLE Chaos Daemons detachment have the following ability:Each time you make a wound roll of 6+ for a NURGLE DAEMON unit within 6\" of any friendly model with the Locus of Virulence, that attack inflicts 1 additional damage."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "2619-e3f4-a2cf-e20a",
+      "name": "Balesword",
+      "entryId": "1438-38a4-32d0-a610::6e8e-eada-8511-4401::11e5-62b4-7039-cf54",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "1438-38a4-32d0-a610::6e8e-eada-8511-4401::c7e1-3b60-3e88-3674",
+          "name": "Balesword",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-3"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll failed wound rolls for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "3f89-6160-95d7-18ef",
+      "name": "Nurglings",
+      "entryId": "1438-38a4-32d0-a610::8e32-49eb-3bfd-d292::c10c-c363-d5c9-6a15",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "1438-38a4-32d0-a610::8e32-49eb-3bfd-d292::159b-7da0-fd2c-8cb7",
+          "name": "Attendant's claws and teeth",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "2"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "0"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "Each time a model attended by Nurglings fights, it can make D6 additional attacks with this weapon. You can re-roll wound rolls of 1 for these attacks."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "ff72-8e3d-bbac-c17c",
+      "name": "Smite",
+      "entryId": "4569-da37-b845-f5bb::a37c-932f-94cd-09c3::03fd-db47-5333-1e1f",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4569-da37-b845-f5bb::a37c-932f-94cd-09c3::72f4-48ff-fafb-c876::5821-6c45-8572-7e0e",
+          "name": "Smite",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "5"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18\" of the psyker suffers D3 mortal wounds (pg 181). If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "a9b3-8d94-2cb8-871e",
+      "name": "Nurglings",
+      "entryId": "4569-da37-b845-f5bb::9f24-70fe-f461-1d66::c10c-c363-d5c9-6a15",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4569-da37-b845-f5bb::9f24-70fe-f461-1d66::159b-7da0-fd2c-8cb7",
+          "name": "Attendant's claws and teeth",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "2"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "0"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "Each time a model attended by Nurglings fights, it can make D6 additional attacks with this weapon. You can re-roll wound rolls of 1 for these attacks."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "f76d-1f5a-a54b-194b",
+      "name": "Plague flail",
+      "entryId": "4569-da37-b845-f5bb::5c18-9092-d1bf-0d98",
+      "entryGroupId": "4569-da37-b845-f5bb::281e-f384-fa73-e46e",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4569-da37-b845-f5bb::9c07-b9b4-7ef9-10a5",
+          "name": "Plague flail",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "7\""
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Assault 3"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-3"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "2"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "This weapon can be fired within 1\" of an enemy unit, and can target enemy units within 1\" of friendly units. Excess damage from this weapon is not lost; instead keep allocating damage to another model in the target unit until either all the damage has been allocated or the unit has been destroyed."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "10.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "9cff-c6ed-297b-850e",
+      "name": "Doomsday bell",
+      "entryId": "4569-da37-b845-f5bb::7259-4603-8cbd-996d",
+      "entryGroupId": "4569-da37-b845-f5bb::c67e-9ec1-0d24-1bd8",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4569-da37-b845-f5bb::356b-d4e0-3bd1-9773",
+          "name": "Doomsday bell",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "+1"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-1"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "D3"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "meta": {
+          "id": "4569-da37-b845-f5bb::ea00-45d6-a45b-0184",
+          "name": "Reverberating Summons",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "If a Great Unclean One with a doomsday bell attempts to summon a unit of NURGLE DAEMONS to the battlefield using a Daemonic Ritual you can roll 4 dice instead of 3 for this summoning roll. In addition, at the start of each of your turns, you may roll a D6 for each NURGLE DAEMON unit within 7\" of any friendly Great Unclean Ones with a doomsday bell; on a 4+ a single slain model is returned to that unit."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "20.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "22e8-9114-e541-cded",
+      "name": "Fleshy Abundance",
+      "entryId": "4569-da37-b845-f5bb::4328-493e-f179-7c9e::ed52-ac8e-95f9-f512::60ec-c45f-2e8d-8ac1",
+      "entryGroupId": "4569-da37-b845-f5bb::4328-493e-f179-7c9e::c7bb-3d6d-b7b1-6822",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4569-da37-b845-f5bb::4328-493e-f179-7c9e::ed52-ac8e-95f9-f512::d1c3-0a45-66ac-372b::4da7-5d51-080e-fd9e",
+          "name": "Fleshy Abundance",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "5"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "If manifested, select a friendly NURGLE DAEMON unit within 18\" of the psyker. One model in that unit regains D3 wounds lost wounds."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "2a51-1be1-b20f-3ff5",
+      "name": "Stream of Corruption",
+      "entryId": "4569-da37-b845-f5bb::4328-493e-f179-7c9e::e1c4-e7d3-dece-7333::da5a-e507-bf89-5be8",
+      "entryGroupId": "4569-da37-b845-f5bb::4328-493e-f179-7c9e::c7bb-3d6d-b7b1-6822",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4569-da37-b845-f5bb::4328-493e-f179-7c9e::e1c4-e7d3-dece-7333::116e-cac1-9611-e259::625a-7853-bbe8-7e73",
+          "name": "Stream of Corruption",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "5"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "7\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "If manifested, the closest enemy unit within 7\" if the psyker and visible to it suffers D3 mortal wounds if it has fewer than 10 models, or D6 mortal wounds if it has 10 models or more."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "7a0a-5c89-4780-bdd1",
+      "name": "Nurgling Swarms",
+      "entryId": "e509-8bbd-7dc9-7798::1894-f930-b063-aaaa",
+      "number": "3",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "e509-8bbd-7dc9-7798::fe51-b2cf-9c5e-88ba",
+          "name": "Nurgling Swarm",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "5\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "2"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "2"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "4"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "4"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "a27c-435a-f42f-40d5",
+          "name": "Diseased claws and teeth",
+          "entryId": "e509-8bbd-7dc9-7798::9865-cd8c-1cf0-ea52",
+          "number": "3",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "e509-8bbd-7dc9-7798::2577-43ba-3ab3-f5cc",
+                  "name": "Diseased claws and teeth",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll wound rolls of 1 for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "54.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "ce4a-b36f-d2ce-aa4f",
+      "name": "Nurgling Swarms",
+      "entryId": "e509-8bbd-7dc9-7798::1894-f930-b063-aaaa",
+      "number": "3",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "e509-8bbd-7dc9-7798::fe51-b2cf-9c5e-88ba",
+          "name": "Nurgling Swarm",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "5\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "2"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "2"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "4"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "4"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "bcb4-0072-942e-40f5",
+          "name": "Diseased claws and teeth",
+          "entryId": "e509-8bbd-7dc9-7798::9865-cd8c-1cf0-ea52",
+          "number": "3",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "e509-8bbd-7dc9-7798::2577-43ba-3ab3-f5cc",
+                  "name": "Diseased claws and teeth",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll wound rolls of 1 for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "54.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "92b2-b22b-5a4f-0dbe",
+      "name": "Nurgling Swarms",
+      "entryId": "e509-8bbd-7dc9-7798::1894-f930-b063-aaaa",
+      "number": "3",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "e509-8bbd-7dc9-7798::fe51-b2cf-9c5e-88ba",
+          "name": "Nurgling Swarm",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "5\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "2"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "2"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "4"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "4"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "aff7-f081-b1e4-6fd9",
+          "name": "Diseased claws and teeth",
+          "entryId": "e509-8bbd-7dc9-7798::9865-cd8c-1cf0-ea52",
+          "number": "3",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "e509-8bbd-7dc9-7798::2577-43ba-3ab3-f5cc",
+                  "name": "Diseased claws and teeth",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll wound rolls of 1 for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "54.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "f0e2-028f-3c6c-9ceb",
+      "name": "Nurgle",
+      "entryId": "26ee-47bc-1997-a2f9::4a74-3874-4059-d979",
+      "entryGroupId": "26ee-47bc-1997-a2f9::f290-028f-25e9-1984",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "26ee-47bc-1997-a2f9::5e6e-07f4-eaff-1ae8",
+          "name": "Locus of Virulence",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "CHARACTERS in a NURGLE Chaos Daemons detachment have the following ability:Each time you make a wound roll of 6+ for a NURGLE DAEMON unit within 6\" of any friendly model with the Locus of Virulence, that attack inflicts 1 additional damage."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "eb4f-d977-0d4d-dc5e",
+      "name": "Smite",
+      "entryId": "3ae5-5535-1201-d577::4669-ac3b-d5f8-4fea::03fd-db47-5333-1e1f",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3ae5-5535-1201-d577::4669-ac3b-d5f8-4fea::72f4-48ff-fafb-c876::5821-6c45-8572-7e0e",
+          "name": "Smite",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "5"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18\" of the psyker suffers D3 mortal wounds (pg 181). If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "87e7-041c-0cba-10c7",
+      "name": "Balesword",
+      "entryId": "3ae5-5535-1201-d577::5b82-c513-c673-cade::11e5-62b4-7039-cf54",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3ae5-5535-1201-d577::5b82-c513-c673-cade::c7e1-3b60-3e88-3674",
+          "name": "Balesword",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-3"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll failed wound rolls for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "27ba-6231-e0dd-8a68",
+      "name": "Virulent Blessing",
+      "entryId": "3ae5-5535-1201-d577::8575-b623-d7a7-45de::e0b5-9976-8c03-dff7::60c6-51ef-10c4-152a",
+      "entryGroupId": "3ae5-5535-1201-d577::8575-b623-d7a7-45de::c7bb-3d6d-b7b1-6822",
+      "book": "Index Chaos",
+      "page": "69",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3ae5-5535-1201-d577::8575-b623-d7a7-45de::e0b5-9976-8c03-dff7::a861-9211-698e-7fdd::d803-c369-40fb-4d82",
+          "name": "Virulent Blessing",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "7"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "If manifested, select a friendly NURGLE DAEMON unit within 18\" of the psyker. Add 1 to wound rolls made by that unit in the Fight phase. Furthermore, wound rolls of 7+ made for that unit in the Fight phase inflict double damage."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "e6ff-75fa-0cf8-8694",
+      "name": "Balesword",
+      "entryId": "3ae5-5535-1201-d577::5b82-c513-c673-cade::11e5-62b4-7039-cf54",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3ae5-5535-1201-d577::5b82-c513-c673-cade::c7e1-3b60-3e88-3674",
+          "name": "Balesword",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-3"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll failed wound rolls for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "8c9a-5e4a-5aac-b67c",
+      "name": "Smite",
+      "entryId": "3ae5-5535-1201-d577::4669-ac3b-d5f8-4fea::03fd-db47-5333-1e1f",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3ae5-5535-1201-d577::4669-ac3b-d5f8-4fea::72f4-48ff-fafb-c876::5821-6c45-8572-7e0e",
+          "name": "Smite",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "5"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18\" of the psyker suffers D3 mortal wounds (pg 181). If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "4089-0575-ee05-3f94",
+      "name": "Miasma of Pestilence",
+      "entryId": "3ae5-5535-1201-d577::8575-b623-d7a7-45de::6311-f1df-2140-5c62::b12f-c1a5-401d-a494",
+      "entryGroupId": "3ae5-5535-1201-d577::8575-b623-d7a7-45de::c7bb-3d6d-b7b1-6822",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3ae5-5535-1201-d577::8575-b623-d7a7-45de::6311-f1df-2140-5c62::05d3-076b-474c-38e9::ce6d-0789-64bb-2729",
+          "name": "Miasma of Pestilence",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "6"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "If manifested, select a friendly NURGLE DAEMON unit within 18\" of the psyker. Until the start of your next Psychic phase, your opponent must select 1 from all hit rolls that target that unit."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "af56-49ec-04c1-60e5",
+      "name": "Marotter",
+      "entryId": "5648-a873-9743-0508::c2b1-d388-ecaa-ad33",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "5648-a873-9743-0508::22d8-bca9-2d07-2f98",
+          "name": "Marotter",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "0"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll wound rolls of 1 made for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "d0b7-4ba6-926f-6c23",
+      "name": "Disgusting sneezes",
+      "entryId": "3fca-730f-ee8e-2786::76ab-7a95-a7b8-7646",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3fca-730f-ee8e-2786::ebd5-df75-9452-a642",
+          "name": "Disgusting sneezes",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "6\""
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Pistol D3"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "3"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "0"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll wound rolls of 1 made for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "301d-83b9-5be4-2d64",
+      "name": "Distended maw",
+      "entryId": "3fca-730f-ee8e-2786::55f4-6ee9-9433-3c4f",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3fca-730f-ee8e-2786::da94-9539-f76e-2cde",
+          "name": "Distended maw",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-1"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll wound rolls of 1 made for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "9d85-7cde-6367-0a67",
+      "name": "Plaguesword",
+      "entryId": "3fca-730f-ee8e-2786::f5db-2d39-4477-78b3::5df1-ff58-ee19-6e21",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "3fca-730f-ee8e-2786::f5db-2d39-4477-78b3::d29b-6921-043a-78e6",
+          "name": "Plaguesword",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "0"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll failed wound rolls for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "e4cd-d6ac-129a-ce24",
+      "name": "Plaguebearer",
+      "entryId": "4fc0-2d3b-1c88-d45e::1b58-8d3e-d92f-d660",
+      "number": "25",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::8054-623c-6661-4d41",
+          "name": "Plaguebearer",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "5\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "4"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "1"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "1"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "3067-fec9-fecd-1b54",
+          "name": "Plaguesword",
+          "entryId": "4fc0-2d3b-1c88-d45e::923c-b090-bd79-331c::5df1-ff58-ee19-6e21",
+          "number": "25",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "4fc0-2d3b-1c88-d45e::923c-b090-bd79-331c::d29b-6921-043a-78e6",
+                  "name": "Plaguesword",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "175.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "5ac6-af10-a191-5a13",
+      "name": "Plagueridden",
+      "entryId": "4fc0-2d3b-1c88-d45e::56ab-5dd2-8833-dbeb",
+      "number": "1",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::3194-9feb-ea54-52cd",
+          "name": "Plagueridden",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "5\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "4"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "1"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "2"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "f106-004f-f1a2-0c4a",
+          "name": "Plaguesword",
+          "entryId": "4fc0-2d3b-1c88-d45e::8faf-411c-5ecd-6247::5df1-ff58-ee19-6e21",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "4fc0-2d3b-1c88-d45e::8faf-411c-5ecd-6247::d29b-6921-043a-78e6",
+                  "name": "Plaguesword",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "7.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "2de3-e72e-2c98-fa9f",
+      "name": "Daemonic Icon",
+      "entryId": "4fc0-2d3b-1c88-d45e::1e8c-68aa-317f-66d2",
+      "entryGroupId": "4fc0-2d3b-1c88-d45e::96d8-1c50-2362-6928",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::4648-b07e-d803-e5fb",
+          "name": "Daemonic Icon",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "If you roll a 1 when taking a Morale test for a unit with any Daemonic Icons, reality blinks and the daemonic horde is bolstered. No models flee and D6 slain Plaguebearers are instead added to the unit."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "15.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "01b6-461b-4e4d-11e5",
+      "name": "Instrument of Chaos",
+      "entryId": "4fc0-2d3b-1c88-d45e::65d2-9681-f4c8-047a::11db-39df-f53b-d823",
+      "entryGroupId": "4fc0-2d3b-1c88-d45e::96d8-1c50-2362-6928",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::65d2-9681-f4c8-047a::598d-9eb0-c858-b6b0",
+          "name": "Instrument of Chaos",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "A unit that includes any Instruments of Chaos adds 1 to their Advance and charge rolls."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "10.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "42a8-f3e0-7429-2612",
+      "name": "Plaguebearer",
+      "entryId": "4fc0-2d3b-1c88-d45e::1b58-8d3e-d92f-d660",
+      "number": "25",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::8054-623c-6661-4d41",
+          "name": "Plaguebearer",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "5\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "4"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "1"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "1"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "28db-578a-809e-7dd6",
+          "name": "Plaguesword",
+          "entryId": "4fc0-2d3b-1c88-d45e::923c-b090-bd79-331c::5df1-ff58-ee19-6e21",
+          "number": "25",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "4fc0-2d3b-1c88-d45e::923c-b090-bd79-331c::d29b-6921-043a-78e6",
+                  "name": "Plaguesword",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "175.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "e4c5-ef7a-715e-07c1",
+      "name": "Plagueridden",
+      "entryId": "4fc0-2d3b-1c88-d45e::56ab-5dd2-8833-dbeb",
+      "number": "1",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::3194-9feb-ea54-52cd",
+          "name": "Plagueridden",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "5\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "4"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "1"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "2"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "0327-35c8-aa71-6b14",
+          "name": "Plaguesword",
+          "entryId": "4fc0-2d3b-1c88-d45e::8faf-411c-5ecd-6247::5df1-ff58-ee19-6e21",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "4fc0-2d3b-1c88-d45e::8faf-411c-5ecd-6247::d29b-6921-043a-78e6",
+                  "name": "Plaguesword",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "7.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "7c23-4be9-cd0b-434f",
+      "name": "Daemonic Icon",
+      "entryId": "4fc0-2d3b-1c88-d45e::1e8c-68aa-317f-66d2",
+      "entryGroupId": "4fc0-2d3b-1c88-d45e::96d8-1c50-2362-6928",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::4648-b07e-d803-e5fb",
+          "name": "Daemonic Icon",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "If you roll a 1 when taking a Morale test for a unit with any Daemonic Icons, reality blinks and the daemonic horde is bolstered. No models flee and D6 slain Plaguebearers are instead added to the unit."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "15.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "cf14-29fe-d514-732a",
+      "name": "Instrument of Chaos",
+      "entryId": "4fc0-2d3b-1c88-d45e::65d2-9681-f4c8-047a::11db-39df-f53b-d823",
+      "entryGroupId": "4fc0-2d3b-1c88-d45e::96d8-1c50-2362-6928",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4fc0-2d3b-1c88-d45e::65d2-9681-f4c8-047a::598d-9eb0-c858-b6b0",
+          "name": "Instrument of Chaos",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "A unit that includes any Instruments of Chaos adds 1 to their Advance and charge rolls."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "10.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "176c-305b-be6e-d820",
+      "name": "Plague Drone",
+      "entryId": "fb7b-f8f7-8413-3ca9::6eb2-2f6e-e014-08f9",
+      "number": "8",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "fb7b-f8f7-8413-3ca9::2434-16b8-a1f8-9886",
+          "name": "Plague Drone",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "10\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "5"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "4"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "1"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "75d1-4203-e77e-92e8",
+          "name": "Plaguesword",
+          "entryId": "fb7b-f8f7-8413-3ca9::dc79-85ff-7eaa-d68b::5df1-ff58-ee19-6e21",
+          "number": "8",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "fb7b-f8f7-8413-3ca9::dc79-85ff-7eaa-d68b::d29b-6921-043a-78e6",
+                  "name": "Plaguesword",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      },
+      {
+        "$": {
+          "id": "f5d5-a203-c714-8f5f",
+          "name": "Rot Fly",
+          "entryId": "fb7b-f8f7-8413-3ca9::a2af-748a-89af-642d::1c11-40ea-0b64-3f29",
+          "number": "8",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          ""
+        ],
+        "selections": [
+          {
+            "selection": [
+              {
+                "$": {
+                  "id": "51be-8685-fe00-7e2f",
+                  "name": "Prehensile Proboscis",
+                  "entryId": "fb7b-f8f7-8413-3ca9::a2af-748a-89af-642d::6f88-bf0f-c13a-f194",
+                  "number": "8",
+                  "type": "upgrade"
+                },
+                "rules": [
+                  ""
+                ],
+                "profiles": [
+                  {
+                    "profile": [
+                      {
+                        "$": {
+                          "id": "fb7b-f8f7-8413-3ca9::a2af-748a-89af-642d::a02b-15d3-c925-3e4e",
+                          "name": "Prehensile proboscis",
+                          "hidden": "false",
+                          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                          "profileTypeName": "Weapon"
+                        },
+                        "profiles": [
+                          ""
+                        ],
+                        "rules": [
+                          ""
+                        ],
+                        "infoLinks": [
+                          ""
+                        ],
+                        "modifiers": [
+                          ""
+                        ],
+                        "characteristics": [
+                          {
+                            "characteristic": [
+                              {
+                                "$": {
+                                  "name": "Range",
+                                  "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                                  "value": "Melee"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "Type",
+                                  "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                                  "value": "Melee"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "S",
+                                  "characteristicTypeId": "59b1-319e-ec13-d466",
+                                  "value": "4"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "AP",
+                                  "characteristicTypeId": "75aa-a838-b675-6484",
+                                  "value": "0"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "D",
+                                  "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                                  "value": "2"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "Abilities",
+                                  "characteristicTypeId": "837d-5e63-aeb7-1410",
+                                  "value": "After a model riding a Rot Fly makes its close combat attacks you can attack with its mount. Make 4 additional attacks using this weapon profile. You can re-roll failed wound rolls for these attacks."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selections": [
+                  ""
+                ],
+                "costs": [
+                  {
+                    "cost": [
+                      {
+                        "$": {
+                          "name": " PL",
+                          "costTypeId": "e356-c769-5920-6e14",
+                          "value": "0.0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "pts",
+                          "costTypeId": "points",
+                          "value": "0.0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "CP",
+                          "costTypeId": "2d3b-b544-ad49-fb75",
+                          "value": "0.0"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "categories": [
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      },
+      {
+        "$": {
+          "id": "b248-2082-1fd0-6337",
+          "name": "Death's heads",
+          "entryId": "fb7b-f8f7-8413-3ca9::2100-e535-e7a0-8fc5::11a3-3f4d-d159-6484",
+          "number": "8",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "fb7b-f8f7-8413-3ca9::2100-e535-e7a0-8fc5::8b5d-3de6-c2a4-ed54",
+                  "name": "Death's heads",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "12\""
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Assault 2"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "4"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll wound rolls of 1 for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "320.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "aadb-793e-7c77-167e",
+      "name": "Plaguebringer",
+      "entryId": "fb7b-f8f7-8413-3ca9::b1c0-8263-6a0e-c4ac",
+      "number": "1",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "fb7b-f8f7-8413-3ca9::483e-a4b9-0485-4b0b",
+          "name": "Plaguebringer",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "10\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "4+"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "5"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "4"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "2"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "9ada-854d-7730-e095",
+          "name": "Plaguesword",
+          "entryId": "fb7b-f8f7-8413-3ca9::42ab-db61-3cce-3396::5df1-ff58-ee19-6e21",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "fb7b-f8f7-8413-3ca9::42ab-db61-3cce-3396::d29b-6921-043a-78e6",
+                  "name": "Plaguesword",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      },
+      {
+        "$": {
+          "id": "3c5f-b27f-f5c7-4dfa",
+          "name": "Rot Fly",
+          "entryId": "fb7b-f8f7-8413-3ca9::e750-1c7b-afb9-33c4::1c11-40ea-0b64-3f29",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          ""
+        ],
+        "selections": [
+          {
+            "selection": [
+              {
+                "$": {
+                  "id": "9aac-ad74-bf73-9db4",
+                  "name": "Prehensile Proboscis",
+                  "entryId": "fb7b-f8f7-8413-3ca9::e750-1c7b-afb9-33c4::6f88-bf0f-c13a-f194",
+                  "number": "1",
+                  "type": "upgrade"
+                },
+                "rules": [
+                  ""
+                ],
+                "profiles": [
+                  {
+                    "profile": [
+                      {
+                        "$": {
+                          "id": "fb7b-f8f7-8413-3ca9::e750-1c7b-afb9-33c4::a02b-15d3-c925-3e4e",
+                          "name": "Prehensile proboscis",
+                          "hidden": "false",
+                          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                          "profileTypeName": "Weapon"
+                        },
+                        "profiles": [
+                          ""
+                        ],
+                        "rules": [
+                          ""
+                        ],
+                        "infoLinks": [
+                          ""
+                        ],
+                        "modifiers": [
+                          ""
+                        ],
+                        "characteristics": [
+                          {
+                            "characteristic": [
+                              {
+                                "$": {
+                                  "name": "Range",
+                                  "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                                  "value": "Melee"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "Type",
+                                  "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                                  "value": "Melee"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "S",
+                                  "characteristicTypeId": "59b1-319e-ec13-d466",
+                                  "value": "4"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "AP",
+                                  "characteristicTypeId": "75aa-a838-b675-6484",
+                                  "value": "0"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "D",
+                                  "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                                  "value": "2"
+                                }
+                              },
+                              {
+                                "$": {
+                                  "name": "Abilities",
+                                  "characteristicTypeId": "837d-5e63-aeb7-1410",
+                                  "value": "After a model riding a Rot Fly makes its close combat attacks you can attack with its mount. Make 4 additional attacks using this weapon profile. You can re-roll failed wound rolls for these attacks."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selections": [
+                  ""
+                ],
+                "costs": [
+                  {
+                    "cost": [
+                      {
+                        "$": {
+                          "name": " PL",
+                          "costTypeId": "e356-c769-5920-6e14",
+                          "value": "0.0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "pts",
+                          "costTypeId": "points",
+                          "value": "0.0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "CP",
+                          "costTypeId": "2d3b-b544-ad49-fb75",
+                          "value": "0.0"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "categories": [
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      },
+      {
+        "$": {
+          "id": "285b-789a-75e2-f710",
+          "name": "Death's heads",
+          "entryId": "fb7b-f8f7-8413-3ca9::fa86-4a53-18de-1ac6::11a3-3f4d-d159-6484",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "fb7b-f8f7-8413-3ca9::fa86-4a53-18de-1ac6::8b5d-3de6-c2a4-ed54",
+                  "name": "Death's heads",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "12\""
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Assault 2"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "4"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "1"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll wound rolls of 1 for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "40.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "0327-4a7f-c84b-cf07",
+      "name": "Daemonic Icon",
+      "entryId": "fb7b-f8f7-8413-3ca9::c081-d0eb-9152-402a",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "fb7b-f8f7-8413-3ca9::0230-ee72-0897-8386",
+          "name": "Daemonic Icon",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "If you roll a 1 when taking a Morale test for a unit with any Daemonic Icons, reality blinks and the daemonic horde is bolstered. No models flee and 1 slain Plague Drone is instead added to the unit."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "15.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "c6b3-1063-a84d-98c6",
+      "name": "Instrument of Chaos",
+      "entryId": "fb7b-f8f7-8413-3ca9::e887-5c7c-bcff-7896::11db-39df-f53b-d823",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "fb7b-f8f7-8413-3ca9::e887-5c7c-bcff-7896::598d-9eb0-c858-b6b0",
+          "name": "Instrument of Chaos",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "A unit that includes any Instruments of Chaos adds 1 to their Advance and charge rolls."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "10.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "d4b8-b70e-258e-b0c0",
+      "name": "Rot Cannon",
+      "entryId": "796f-5ab6-2469-0717::2b4a-6403-c332-3425",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "796f-5ab6-2469-0717::a2d0-2a42-a1b6-e987",
+          "name": "Rot Cannon",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "36\""
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Heavy D6"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "6"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-3"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "2"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "Against INFANTRY targets, failed wound rolls for this weapon are re-rolled."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "ab6f-33a9-e7b5-0b3f",
+      "name": "Rancid vomit",
+      "entryId": "796f-5ab6-2469-0717::c0ce-44dd-ebbc-03d6",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "796f-5ab6-2469-0717::194b-fbd0-e9f1-b8f6",
+          "name": "Rancid vomit",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "7\""
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Pistol D6"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "5"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-2"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "This weapon automatically hits its target."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "61c3-f93a-9f57-fa30",
+      "name": "Warpsword",
+      "entryId": "796f-5ab6-2469-0717::7c04-b221-a13d-1460",
+      "entryGroupId": "796f-5ab6-2469-0717::4789-4bbc-4fc9-f755",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "796f-5ab6-2469-0717::4197-1258-3a62-9fd4",
+          "name": "Warpsword",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "User"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-3"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "3"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll failed hit rolls for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "a4ae-77a2-0925-a9f1",
+      "name": "Horrific vomit",
+      "entryId": "8e5f-c944-f46e-4b68::b4f5-26b0-7941-3468",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "8e5f-c944-f46e-4b68::ecbb-05bc-352d-5c75",
+          "name": "Horrific vomit",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "9\""
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Pistol 2D6"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "6"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-2"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "D3"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "This weapon hits automatically."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "7489-d5ba-62fc-3a02",
+      "name": "Blade of Decay",
+      "entryId": "8e5f-c944-f46e-4b68::adcf-f137-b61c-969b",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "8e5f-c944-f46e-4b68::190c-b2c5-5cdd-613d",
+          "name": "Blade of Decay",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "+2"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-4"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "6"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "-"
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "304e-8bb4-65cb-3c1b",
+      "name": "Nurglings",
+      "entryId": "8e5f-c944-f46e-4b68::e012-9a7f-c886-79fa",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "8e5f-c944-f46e-4b68::006e-392f-b99a-e235",
+          "name": "Claws and teeth",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "2"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "0"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "1"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "After a model accompanied by Nurglings makes its close combat attacks, you can attack with the Nurglings. Make D6 additional attacks, using this weapon profile. You can re-roll wound rolls of 1 for these attacks."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "2ea3-5209-5362-08fa",
+      "name": "Smite",
+      "entryId": "8e5f-c944-f46e-4b68::d3cc-17b8-5793-4875::03fd-db47-5333-1e1f",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "8e5f-c944-f46e-4b68::d3cc-17b8-5793-4875::72f4-48ff-fafb-c876::5821-6c45-8572-7e0e",
+          "name": "Smite",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "5"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18\" of the psyker suffers D3 mortal wounds (pg 181). If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "ecbd-ccc7-d868-216c",
+      "name": "Warlord",
+      "entryId": "8e5f-c944-f46e-4b68::acae-823f-aa1e-1062::c488-0afe-c67e-2606",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": [
+      {
+        "$": {
+          "id": "d203-a2fd-63e3-e9aa",
+          "name": "Warlord",
+          "entryId": "ae09-117e-a6fa-316b",
+          "primary": "false"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "meta": {
+      "id": "783e-eb5c-4258-ec68",
+      "name": "Virulent Blessing",
+      "entryId": "8e5f-c944-f46e-4b68::dd99-cf50-3703-03f8::e0b5-9976-8c03-dff7::60c6-51ef-10c4-152a",
+      "entryGroupId": "8e5f-c944-f46e-4b68::dd99-cf50-3703-03f8::c7bb-3d6d-b7b1-6822",
+      "book": "Index Chaos",
+      "page": "69",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "8e5f-c944-f46e-4b68::dd99-cf50-3703-03f8::e0b5-9976-8c03-dff7::a861-9211-698e-7fdd::d803-c369-40fb-4d82",
+          "name": "Virulent Blessing",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "7"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "If manifested, select a friendly NURGLE DAEMON unit within 18\" of the psyker. Add 1 to wound rolls made by that unit in the Fight phase. Furthermore, wound rolls of 7+ made for that unit in the Fight phase inflict double damage."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "e828-4dfd-927a-ef94",
+      "name": "Miasma of Pestilence",
+      "entryId": "8e5f-c944-f46e-4b68::dd99-cf50-3703-03f8::6311-f1df-2140-5c62::b12f-c1a5-401d-a494",
+      "entryGroupId": "8e5f-c944-f46e-4b68::dd99-cf50-3703-03f8::c7bb-3d6d-b7b1-6822",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "8e5f-c944-f46e-4b68::dd99-cf50-3703-03f8::6311-f1df-2140-5c62::05d3-076b-474c-38e9::ce6d-0789-64bb-2729",
+          "name": "Miasma of Pestilence",
+          "hidden": "false",
+          "profileTypeId": "ae70-4738-0161-bec0",
+          "profileTypeName": "Psychic Power"
+        },
+        "characteristics": [
+          {
+            "name": "Warp Charge",
+            "characteristicTypeId": "5ffd-b800-c317-532a",
+            "value": "6"
+          },
+          {
+            "name": "Range",
+            "characteristicTypeId": "fd64-cbc4-94de-24cc",
+            "value": "18\""
+          },
+          {
+            "name": "Details",
+            "characteristicTypeId": "ad96-dfa4-b4ed-656d",
+            "value": "If manifested, select a friendly NURGLE DAEMON unit within 18\" of the psyker. Until the start of your next Psychic phase, your opponent must select 1 from all hit rolls that target that unit."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "b4fc-1b4a-2e3f-01ff",
+      "name": "Acidic Ichor",
+      "entryId": "8e5f-c944-f46e-4b68::8395-20aa-912a-653f::3967-9770-7b2d-258e::19ef-3325-c9fb-27b7",
+      "entryGroupId": "8e5f-c944-f46e-4b68::8395-20aa-912a-653f::39b3-7431-2716-1e0b",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "8e5f-c944-f46e-4b68::8395-20aa-912a-653f::3967-9770-7b2d-258e::1ed1-9e78-0cd6-0825::0bc3-e240-7e80-007c",
+          "name": "Acidic Ichor",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "Roll a dice each time your Warlord loses a wound in the Fight phase. On a 4+ the unit that inflicted that wound is splashed by acidic ichor and suffers a mortal wound after all of its own attacks have been resolved."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "7cc9-a69d-75a4-8fb5",
+      "name": "Feculent Gnarlmaw",
+      "entryId": "19fc-9cca-26ce-797b::9852-f780-288f-5c05",
+      "number": "1",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "19fc-9cca-26ce-797b::f0ac-6c85-3181-d81c",
+          "name": "Feculent Gnarlmaw",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "Each Feculent Gnarlmaw in this unit must be set up within 6\" of each other, and none can be set up within 1\" of any terrain feature."
+          }
+        ]
+      },
+      {
+        "meta": {
+          "id": "19fc-9cca-26ce-797b::4dd7-65f3-0553-a1c3",
+          "name": "Pestilent Garden",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "After it is set up, a Feculent Gnarlmaw is treated as a terrain feature. It cannot move for any reason, is not treated as a friendly or enemy model, and cannot be targeted or affected by any attacks or abilities."
+          }
+        ]
+      },
+      {
+        "meta": {
+          "id": "19fc-9cca-26ce-797b::002c-d911-1c4f-29b6",
+          "name": "Shroud of Flies",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "All NURGLE DAEMON units - except VEHICLES and MONSTERS - that are completely within 7\" of any Feculent Gnarlmaws receive the benefit of cover, but you add 2 to their saving throws instead of 1 (remember invulnerable saves are not benefitted by cover)."
+          }
+        ]
+      },
+      {
+        "meta": {
+          "id": "19fc-9cca-26ce-797b::8522-0bba-ff6f-e2ce",
+          "name": "Sickness Blossoms",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "At the start of your turn, roll a D6 for every unit that is within 3\" of any Feculent Gnarlmaws; on a 4+, that unit suffers 1 mortal wound, but on a 6 it suffers D3 mortal wounds instead. NURGLE units are unaffected by this ability."
+          }
+        ]
+      },
+      {
+        "meta": {
+          "id": "19fc-9cca-26ce-797b::e78f-a9d9-4921-3275",
+          "name": "The Plague Bells Chime",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "NURGLE DAEMON units that are within 7\" of any Feculent Gnarlmaws at the start of their turn can shoot and/or charge this turn, even if they Fell Back or Advanced."
+          }
+        ]
+      },
+      {
+        "meta": {
+          "id": "19fc-9cca-26ce-797b::9ddf-d685-1f18-5e05",
+          "name": "Conduit to Nurgle's Domain",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "You can re-roll any of the dice used in the summoning roll when a CHAOS CHARACTER from your army that is within 7\" of any Feculent Gnarlmaw attempts to summon a unit of NURGLE DAEMONS to the battlefield using a Daemonic Ritual."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "85.0"
+      },
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "8479-5378-1aaa-b93a",
+      "name": "Nurgle",
+      "entryId": "26ee-47bc-1997-a2f9::4a74-3874-4059-d979",
+      "entryGroupId": "26ee-47bc-1997-a2f9::f290-028f-25e9-1984",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "26ee-47bc-1997-a2f9::5e6e-07f4-eaff-1ae8",
+          "name": "Locus of Virulence",
+          "hidden": "false",
+          "profileTypeId": "72c5eafc-75bf-4ed9-b425-78009f1efe82",
+          "profileTypeName": "Abilities"
+        },
+        "characteristics": [
+          {
+            "name": "Description",
+            "characteristicTypeId": "21befb24-fc85-4f52-a745-64b2e48f8228",
+            "value": "CHARACTERS in a NURGLE Chaos Daemons detachment have the following ability:Each time you make a wound roll of 6+ for a NURGLE DAEMON unit within 6\" of any friendly model with the Locus of Virulence, that attack inflicts 1 additional damage."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "388d-70a8-9f9d-7699",
+      "name": "Lopping Shears",
+      "entryId": "4605-f6b6-d6c8-4d8d::03d3-9ef1-68e9-caba",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4605-f6b6-d6c8-4d8d::b1a9-8842-60ad-5a44",
+          "name": "Lopping Shears",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "+1"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-3"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "D3"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "You can re-roll all failed wound rols for this weapon."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  },
+  {
+    "meta": {
+      "id": "edaf-9c69-0f63-d2f3",
+      "name": "Mulch",
+      "entryId": "4605-f6b6-d6c8-4d8d::30dc-087b-31a9-4da0",
+      "number": "1",
+      "type": "upgrade"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "4605-f6b6-d6c8-4d8d::e7ea-4f5a-a1c1-251f",
+          "name": "Mulch's acidic maw",
+          "hidden": "false",
+          "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+          "profileTypeName": "Weapon"
+        },
+        "characteristics": [
+          {
+            "name": "Range",
+            "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+            "value": "Melee"
+          },
+          {
+            "name": "Type",
+            "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+            "value": "Melee"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "59b1-319e-ec13-d466",
+            "value": "7"
+          },
+          {
+            "name": "AP",
+            "characteristicTypeId": "75aa-a838-b675-6484",
+            "value": "-4"
+          },
+          {
+            "name": "D",
+            "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+            "value": "3"
+          },
+          {
+            "name": "Abilities",
+            "characteristicTypeId": "837d-5e63-aeb7-1410",
+            "value": "After Horticulous Slimux makes his close combat attacks, you can attack with Mulch. Make 1 additional attack, using this weapon profile."
+          }
+        ]
+      }
+    ],
+    "selections": [],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "0.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "0.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "d0c5-1150-1b2e-78e5",
+      "name": "Beast of Nurgle",
+      "entryId": "24a4-c7df-1061-0e35::31a7-7cbf-59f7-87a6",
+      "number": "1",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "24a4-c7df-1061-0e35::1db0-6012-e0cc-b494",
+          "name": "Beast of Nurgle",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "6\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "-"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "5"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "5"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "D6"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "1a13-5e06-b6e6-de7f",
+          "name": "Putrid appendages",
+          "entryId": "24a4-c7df-1061-0e35::067c-f819-d104-2c47",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "24a4-c7df-1061-0e35::aeb2-2333-de41-c6f7",
+                  "name": "Putrid appendages",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "2"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "2.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "34.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "8b2a-2cf9-65da-0d11",
+      "name": "Beast of Nurgle",
+      "entryId": "24a4-c7df-1061-0e35::31a7-7cbf-59f7-87a6",
+      "number": "1",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "24a4-c7df-1061-0e35::1db0-6012-e0cc-b494",
+          "name": "Beast of Nurgle",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "6\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "-"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "5"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "5"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "D6"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "72a5-0877-ed2c-04bd",
+          "name": "Putrid appendages",
+          "entryId": "24a4-c7df-1061-0e35::067c-f819-d104-2c47",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "24a4-c7df-1061-0e35::aeb2-2333-de41-c6f7",
+                  "name": "Putrid appendages",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "2"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "2.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "34.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+[
+  {
+    "meta": {
+      "id": "008c-2f06-eb37-cf13",
+      "name": "Beast of Nurgle",
+      "entryId": "24a4-c7df-1061-0e35::31a7-7cbf-59f7-87a6",
+      "number": "1",
+      "type": "model"
+    },
+    "profiles": [
+      {
+        "meta": {
+          "id": "24a4-c7df-1061-0e35::1db0-6012-e0cc-b494",
+          "name": "Beast of Nurgle",
+          "hidden": "false",
+          "profileTypeId": "800f-21d0-4387-c943",
+          "profileTypeName": "Unit"
+        },
+        "characteristics": [
+          {
+            "name": "M",
+            "characteristicTypeId": "0bdf-a96e-9e38-7779",
+            "value": "6\""
+          },
+          {
+            "name": "WS",
+            "characteristicTypeId": "e7f0-1278-0250-df0c",
+            "value": "4+"
+          },
+          {
+            "name": "BS",
+            "characteristicTypeId": "381b-eb28-74c3-df5f",
+            "value": "-"
+          },
+          {
+            "name": "S",
+            "characteristicTypeId": "2218-aa3c-265f-2939",
+            "value": "4"
+          },
+          {
+            "name": "T",
+            "characteristicTypeId": "9c9f-9774-a358-3a39",
+            "value": "5"
+          },
+          {
+            "name": "W",
+            "characteristicTypeId": "f330-5e6e-4110-0978",
+            "value": "5"
+          },
+          {
+            "name": "A",
+            "characteristicTypeId": "13fc-b29b-31f2-ab9f",
+            "value": "D6"
+          },
+          {
+            "name": "Ld",
+            "characteristicTypeId": "00ca-f8b8-876d-b705",
+            "value": "7"
+          },
+          {
+            "name": "Save",
+            "characteristicTypeId": "c0df-df94-abd7-e8d3",
+            "value": "6+"
+          }
+        ]
+      }
+    ],
+    "selections": [
+      {
+        "$": {
+          "id": "fd08-238a-9613-9d43",
+          "name": "Putrid appendages",
+          "entryId": "24a4-c7df-1061-0e35::067c-f819-d104-2c47",
+          "number": "1",
+          "type": "upgrade"
+        },
+        "rules": [
+          ""
+        ],
+        "profiles": [
+          {
+            "profile": [
+              {
+                "$": {
+                  "id": "24a4-c7df-1061-0e35::aeb2-2333-de41-c6f7",
+                  "name": "Putrid appendages",
+                  "hidden": "false",
+                  "profileTypeId": "d5f97c0b-9fc9-478d-aa34-a7c414d3ea48",
+                  "profileTypeName": "Weapon"
+                },
+                "profiles": [
+                  ""
+                ],
+                "rules": [
+                  ""
+                ],
+                "infoLinks": [
+                  ""
+                ],
+                "modifiers": [
+                  ""
+                ],
+                "characteristics": [
+                  {
+                    "characteristic": [
+                      {
+                        "$": {
+                          "name": "Range",
+                          "characteristicTypeId": "6fa97fa8-ea74-4a27-a0fb-bc4e5f367464",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Type",
+                          "characteristicTypeId": "077c342f-d7b9-45c6-b8af-88e97cafd3a2",
+                          "value": "Melee"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "S",
+                          "characteristicTypeId": "59b1-319e-ec13-d466",
+                          "value": "User"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "AP",
+                          "characteristicTypeId": "75aa-a838-b675-6484",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "D",
+                          "characteristicTypeId": "ae8a-3137-d65b-4ca7",
+                          "value": "2"
+                        }
+                      },
+                      {
+                        "$": {
+                          "name": "Abilities",
+                          "characteristicTypeId": "837d-5e63-aeb7-1410",
+                          "value": "You can re-roll failed wound rolls for this weapon."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selections": [
+          ""
+        ],
+        "costs": [
+          {
+            "cost": [
+              {
+                "$": {
+                  "name": " PL",
+                  "costTypeId": "e356-c769-5920-6e14",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "pts",
+                  "costTypeId": "points",
+                  "value": "0.0"
+                }
+              },
+              {
+                "$": {
+                  "name": "CP",
+                  "costTypeId": "2d3b-b544-ad49-fb75",
+                  "value": "0.0"
+                }
+              }
+            ]
+          }
+        ],
+        "categories": [
+          ""
+        ]
+      }
+    ],
+    "costs": [
+      {
+        "name": " PL",
+        "costTypeId": "e356-c769-5920-6e14",
+        "value": "2.0"
+      },
+      {
+        "name": "pts",
+        "costTypeId": "points",
+        "value": "34.0"
+      },
+      {
+        "name": "CP",
+        "costTypeId": "2d3b-b544-ad49-fb75",
+        "value": "0.0"
+      }
+    ],
+    "categories": []
+  }
+]
+{ meta: 
+   { id: 'c4b9-5c05-bf91-61f8',
+     name: 'New Roster',
+     battleScribeVersion: '2.01',
+     gameSystemId: '28ec-711c-d87f-3aeb',
+     gameSystemName: 'Warhammer 40,000 8th Edition',
+     gameSystemRevision: '92',
+     xmlns: 'http://www.battlescribe.net/schema/rosterSchema' },
+  costs: 
+   [ { name: ' PL',
+       costTypeId: 'e356-c769-5920-6e14',
+       value: '146.0' },
+     { name: 'pts', costTypeId: 'points', value: '3000.0' } ],
+  detachments: 
+   [ { meta: [Object], units: [Array] },
+     { meta: [Object], units: [Array] },
+     { meta: [Object], units: [Array] } ] }

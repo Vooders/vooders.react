@@ -9,7 +9,7 @@ import { JsonTransformer } from './JsonTransformer'
 // const dbName = 'api'
 
 
-const dir = '/home/vooders/development/vooders.react/api/rosters/'
+const dir = '/Users/wilsok23/development/personal/vooders.react/api/rosters/'
 const filename = 'Daemon3k.rosz'
 
 
