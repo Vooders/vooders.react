@@ -10,7 +10,7 @@ import { JsonTransformer } from './JsonTransformer'
 
 
 const dir = '/Users/wilsok23/development/personal/vooders.react/api/rosters/'
-const filename = 'death-guard-sorcerer-1.4k.rosz'
+const filename = 'death-guard-terminator-1.4k.rosz'
 
 
 async function convertAndSave () {

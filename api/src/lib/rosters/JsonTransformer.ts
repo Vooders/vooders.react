@@ -12,30 +12,7 @@ export class JsonTransformer {
     return forcesArray.map((force: any) => {
       return {
         meta: force.$,
-        units: this.transformUnits(force.selections[0].selection || [])
-      }
-    })
-  }
-
-  private static transformUnits (unitsArray: any[]) {
-    return unitsArray.map((unit: any) => {
-      return {
-        meta: unit.$,
-        rules: this.transformRules(unit.rules[0].rule || []),
-        profiles: this.transformProfiles(unit.profiles[0].profile || []),
-        selections: this.transformSelections(unit.selections[0].selection || []),
-        costs: this.transformCosts(unit.costs[0].cost || []),
-        categories: this.transformCategories(unit.categories[0].category || [])
-      }
-    })
-
-  }
-
-  private static transformCategories (categoriesArray: any[]) {
-    return categoriesArray.map((category: any) =>{
-      return {
-        name: category.$.name,
-        primary: category.$.primary
+        units: this.transformSelections(force.selections[0].selection || [])
       }
     })
   }
@@ -44,10 +21,20 @@ export class JsonTransformer {
     return selectionsArray.map((selection) => {
       return {
         meta: selection.$,
+        rules: this.transformRules(selection.rules[0].rule || []),
         profiles: this.transformProfiles(selection.profiles[0].profile || []),
         selections: (selection.selections.length > 0) ? this.transformSelections(selection.selections[0].selection || []) : [],
         costs: this.transformCosts(selection.costs[0].cost || []),
         categories: this.transformCategories(selection.categories[0].category || [])
+      }
+    })
+  }
+
+  private static transformCategories (categoriesArray: any[]) {
+    return categoriesArray.map((category: any) =>{
+      return {
+        name: category.$.name,
+        primary: category.$.primary
       }
     })
   }
