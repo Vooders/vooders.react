@@ -10,6 +10,7 @@ export const get = (req: restify.Request, res: restify.Response, next: restify.N
     try {
       if (err) throw err
       const id = req.params.id
+
       if (!indexRegex.test(id)) {
         res.send(400, 'Wrong index format')
       } else {
@@ -28,7 +29,7 @@ export const get = (req: restify.Request, res: restify.Response, next: restify.N
       if (error.code === 'ECONNREFUSED'){
         res.send(500, 'Database Down')
       } else {
-        res.send(500, error.message)
+        res.send(500, 'Unexpected Error')
       }
     } finally {
       client.close()
