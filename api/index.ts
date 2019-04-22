@@ -32,3 +32,4 @@ if (cluster.isMaster) {
     logger.info(`${apiServer.name} ${process.pid} listening at ${apiServer.url}`)
   })
 }
+console.log('server up!')
