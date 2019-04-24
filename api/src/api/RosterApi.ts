@@ -7,14 +7,16 @@ const indexRegex = /^[a-f\d]{24}$/i
 
 export const get = (req: restify.Request, res: restify.Response, next: restify.Next) => {
   MongoClient.connect(dbUrl, { useNewUrlParser: true }, async (err, client) => {
+    res.header("Access-Control-Allow-Origin", "*")
     try {
       if (err) throw err
       const id = req.params.id
+      console.log(id)
 
       if (!indexRegex.test(id)) {
         res.send(400, 'Wrong index format')
       } else {
-        const objectId = new ObjectId()
+        const objectId = new ObjectId(id)
         const db = client.db(dbName)
         const collection = db.collection('rosters')
         const roster = await collection.findOne(objectId)
