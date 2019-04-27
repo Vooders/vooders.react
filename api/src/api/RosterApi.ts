@@ -1,12 +1,16 @@
 import * as restify from 'restify'
 import { MongoClient, ObjectId } from 'mongodb'
 
-const dbUrl = 'mongodb://root:example@localhost'
-const dbName = 'api'
+const dbConfig = {
+  url: 'mongodb://root:example@localhost',
+  name: 'api',
+  collection: 'rosters'
+}
+
 const indexRegex = /^[a-f\d]{24}$/i
 
 export const get = (req: restify.Request, res: restify.Response, next: restify.Next) => {
-  MongoClient.connect(dbUrl, { useNewUrlParser: true }, async (err, client) => {
+  MongoClient.connect(dbConfig.url, { useNewUrlParser: true }, async (err, client) => {
     res.header("Access-Control-Allow-Origin", "*")
     try {
       if (err) throw err
@@ -17,8 +21,8 @@ export const get = (req: restify.Request, res: restify.Response, next: restify.N
         res.send(400, 'Wrong index format')
       } else {
         const objectId = new ObjectId(id)
-        const db = client.db(dbName)
-        const collection = db.collection('rosters')
+        const db = client.db(dbConfig.name)
+        const collection = db.collection(dbConfig.collection)
         const roster = await collection.findOne(objectId)
         if (!roster) {
           res.send(404, 'Roster not found')
