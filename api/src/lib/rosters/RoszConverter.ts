@@ -8,7 +8,7 @@ const dbUrl = 'mongodb://root:example@localhost'
 const dbName = 'api'
 
 
-const dir = '/Users/wilsok23/development/personal/vooders.react/api/rosters/'
+const dir = '~/development/personal/vooders.react/api/rosters/'
 const filename = 'death-guard-terminator-1.4k.rosz'
 
 
