@@ -15,8 +15,6 @@ export const get = (req: restify.Request, res: restify.Response, next: restify.N
     try {
       if (err) throw err
       const id = req.params.id
-      console.log(id)
-
       if (!indexRegex.test(id)) {
         res.send(400, 'Wrong index format')
       } else {
