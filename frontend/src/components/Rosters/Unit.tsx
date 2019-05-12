@@ -5,7 +5,7 @@ import { CharacteristicsTable } from './CharacteristicsTable'
 interface UnitProps {
   unit : {
     meta: any,
-    profiles: any[]
+    profiles: any
   }
 }
 
@@ -15,11 +15,11 @@ export class Unit extends React.Component<UnitProps> {
       <>
         <h4>{ this.props.unit.meta.name }</h4>
         { this.props.unit.meta.type === 'model' ?
-          this.props.unit.profiles.map((profile: any, i) => {
+          Object.keys(this.props.unit.profiles).map((profileKey: any) => {
             return (
               <>
-                <h6>{ profile.meta.name }</h6>
-                <CharacteristicsTable characteristics={profile.characteristics} />
+                <h6>{ profileKey }</h6>
+                <CharacteristicsTable characteristics={this.props.unit.profiles[profileKey]} />
               </>
             )
           }) : <>bob</>

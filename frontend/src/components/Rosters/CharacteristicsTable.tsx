@@ -14,6 +14,7 @@ export class CharacteristicsTable extends React.Component<CharacteristicsTablePr
   render () {
     return (
       <>
+      { console.log(this.props) }
       {/* { JSON.stringify(this.props.characteristics, null, 2) } */}
         <Table>
           <thead>
