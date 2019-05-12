@@ -1,22 +1,36 @@
 import React from 'react'
-// import { Tab, Row, Col, Nav, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { HorizontalTable } from './HorizontalTable'
 import { VerticalTable } from './VerticalTable'
 
 interface UnitProps {
   unit : {
-    meta: any,
-    profiles: any
+    meta: {
+      name: string
+    },
+    profiles: {
+      [key :string]: Profile[]
+    }
   }
+}
+
+export type Profile = {
+  meta: {
+    name: string
+  },
+  characteristics: Characteristic[]
+}
+
+export type Characteristic = {
+  name: string,
+  value: string
 }
 
 export class Unit extends React.Component<UnitProps> {
   render () {
     return (
       <>
-        <h4>{ this.props.unit.meta.name }</h4>
-        { this.props.unit.meta.type === 'model' ?
-          Object.keys(this.props.unit.profiles).map((profileKey: any) => {
+        <h2>{ this.props.unit.meta.name }</h2>
+        { Object.keys(this.props.unit.profiles).map((profileKey: any) => {
             return (
               <>
                 <h5>{ profileKey }</h5>
@@ -26,7 +40,7 @@ export class Unit extends React.Component<UnitProps> {
                 }
               </>
             )
-          }) : <>bob</>
+          })
         }
       </>
     )

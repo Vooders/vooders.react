@@ -1,20 +1,9 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
+import { Profile } from './Unit'
 
 interface VerticalTableTableProps {
-  data: Characteristics[]
-}
-
-export type Characteristics = {
-  meta: {
-    name: string
-  },
-  characteristics: Characteristic[]
-}
-
-export type Characteristic = {
-  name: string,
-  value: string
+  data: Profile[]
 }
 
 export class VerticalTable extends React.Component<VerticalTableTableProps> {
@@ -22,18 +11,28 @@ export class VerticalTable extends React.Component<VerticalTableTableProps> {
     return (
       <>
         <Table>
-          { this.props.data.map((characteristics) => {
-            return(
-              <tr>
-                <th>{ characteristics.meta.name }</th>
+          <thead>
+            <th></th>
+          { this.props.data[0].characteristics.map((characteristic) => {
+              return(
+                <th>{ characteristic.name }</th>
+              )
+            })}
+          </thead>
+          <tbody>
+            { this.props.data.map((characteristics) => {
+              return(
+                <tr>
+                  <th>{ characteristics.meta.name }</th>
                 { characteristics.characteristics.map((characteristic) => {
-                  return(
-                    <td>{ characteristic.value }</td>
-                  )
-                })}
-              </tr>
-            )
-          }) }
+                    return(
+                      <td>{ characteristic.value }</td>
+                    )
+                  })}
+                </tr>
+              )
+            }) }
+          </tbody>
         </Table>
       </>
     )

@@ -1,18 +1,9 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
+import { Profile } from './Unit'
 
 interface HorizontalTableProps {
-  data: Characteristics[]
-}
-
-export type Characteristics = {
-  meta: {},
-  characteristics: Characteristic[]
-}
-
-export type Characteristic = {
-  name: string,
-  value: string
+  data: Profile[]
 }
 
 export class HorizontalTable extends React.Component<HorizontalTableProps> {
@@ -21,12 +12,12 @@ export class HorizontalTable extends React.Component<HorizontalTableProps> {
       <>
         <Table>
           <thead>
-            {this.props.data[0].characteristics.map((characteristic: Characteristic) => {
+            {this.props.data[0].characteristics.map((characteristic) => {
               return <th>{characteristic.name}</th>
             })}
           </thead>
           <tbody>
-            {this.props.data[0].characteristics.map((characteristic: Characteristic) => {
+            {this.props.data[0].characteristics.map((characteristic) => {
               return <td>{characteristic.value}</td>
             })}
           </tbody>
