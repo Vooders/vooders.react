@@ -1,3 +1,5 @@
+import immer from 'immer'
+
 export class JsonTransformer {
   static transform (data: any) {
     const rosData = data.roster
@@ -67,11 +69,25 @@ export class JsonTransformer {
   }
 
   private static transformProfiles (profilesArray: any[]) {
-    return profilesArray.map((profile: any) => {
+    const reduced = profilesArray.map((profile: any) => {
       return {
         meta: profile.$,
         characteristics: this.transformCharacteristics(profile.characteristics[0].characteristic || [])
       }
     })
+    return this.sortProfiles(reduced)
+  }
+
+  private static sortProfiles (profileArray: any[]) {
+    const base: any = {}
+    const sorted = immer(base, (draft: any) => {
+      profileArray.forEach((profile: any) => {
+        if (!draft[profile.meta.profileTypeName]) {
+          draft[profile.meta.profileTypeName] = []
+        }
+        draft[profile.meta.profileTypeName].push(profile)
+      })
+    })
+    return sorted
   }
 }

@@ -7,16 +7,16 @@ import { MongoClient } from 'mongodb'
 const dbUrl = 'mongodb://root:example@localhost'
 const dbName = 'api'
 
-
-const dir = '~/development/personal/vooders.react/api/rosters/'
-const filename = 'death-guard-terminator-1.4k.rosz'
-
+const dir = process.env['ROSTER_DIR']
+if (!dir) throw new Error('no dir set!')
+const filename = 'Daemon3k.rosz'
 
 async function convertAndSave () {
   try {
     const file = await decompress(`${dir}${filename}`)
     const json = await Xml2Json.parseBuffer(file[0].data)
     const transformedJson = JsonTransformer.transform(json)
+    console.log(JSON.stringify(transformedJson, null, 2))
     insert(transformedJson)
   } catch(error) {
     console.log(error)
