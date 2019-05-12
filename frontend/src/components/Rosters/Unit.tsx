@@ -1,6 +1,7 @@
 import React from 'react'
 // import { Tab, Row, Col, Nav, OverlayTrigger, Tooltip } from 'react-bootstrap'
-import { CharacteristicsTable } from './CharacteristicsTable'
+import { HorizontalTable } from './HorizontalTable'
+import { VerticalTable } from './VerticalTable'
 
 interface UnitProps {
   unit : {
@@ -18,8 +19,11 @@ export class Unit extends React.Component<UnitProps> {
           Object.keys(this.props.unit.profiles).map((profileKey: any) => {
             return (
               <>
-                <h6>{ profileKey }</h6>
-                <CharacteristicsTable characteristics={this.props.unit.profiles[profileKey]} />
+                <h5>{ profileKey }</h5>
+                { this.props.unit.profiles[profileKey].length === 1 ?
+                  <HorizontalTable data={this.props.unit.profiles[profileKey]}></HorizontalTable> :
+                  <VerticalTable data={this.props.unit.profiles[profileKey]}></VerticalTable>
+                }
               </>
             )
           }) : <>bob</>
