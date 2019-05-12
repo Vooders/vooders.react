@@ -25,7 +25,8 @@ export class JsonTransformer {
         meta: selection.$,
         rules: this.transformRules(selection.rules[0].rule || []),
         profiles: this.transformProfiles(selection.profiles[0].profile || []),
-        selections: (selection.selections.length > 0) ? this.transformSelections(selection.selections[0].selection || []) : [],
+        selections: (selection.selections.length > 0) ? 
+          this.sortUnitSelections(this.transformSelections(selection.selections[0].selection || [])) : [],
         costs: this.transformCosts(selection.costs[0].cost || []),
         categories: this.transformCategories(selection.categories[0].category || [])
       }
@@ -86,6 +87,26 @@ export class JsonTransformer {
           draft[profile.meta.profileTypeName] = []
         }
         draft[profile.meta.profileTypeName].push(profile)
+      })
+    })
+    return sorted
+  }
+
+  private static sortUnitSelections (selectionsArray: any[]) {
+    const base: any = {}
+    const sorted = immer(base, (draft: any) => {
+      selectionsArray.forEach((selections: any) => {
+        const keys = Object.keys(selections.profiles)
+        // console.log('keys:', keys)
+        keys.forEach((key) => {
+          if (!draft[key]) {
+            draft[key] = []
+          }
+          // console.log('selection:', selections.profiles[key])
+          selections.profiles[key].forEach((selection: any) => {
+            draft[key].push(selection)
+          })
+        })
       })
     })
     return sorted
