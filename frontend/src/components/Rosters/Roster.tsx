@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { Badge } from 'react-bootstrap'
+import { Badge, Container } from 'react-bootstrap'
 import { Detachments } from './Detachments'
 
 export class Roster extends React.Component {
@@ -24,7 +24,7 @@ export class Roster extends React.Component {
 
   render () {
     return (
-      <>
+      <Container>
         <h2>{ this.state.meta.name }</h2>
         { this.state.costs.map((cost: any) => {
           return <Badge pill variant="info">
@@ -32,7 +32,7 @@ export class Roster extends React.Component {
           </Badge> 
         }) }
         <Detachments detachments={this.state.detachments} />
-      </>
+      </Container>
     )
   }
 }

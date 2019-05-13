@@ -26,6 +26,8 @@ export type Characteristic = {
 }
 
 export class Unit extends React.Component<UnitProps> {
+  private readonly ignoreList: string[] = ['Unit', 'Wound Track', 'Psychic Power', 'Abilities']
+
   render () {
     return (
       <>
@@ -35,6 +37,13 @@ export class Unit extends React.Component<UnitProps> {
           <>
             <h5>Unit</h5>
             <StatTable data={this.props.unit.profiles.Unit}></StatTable>
+          </> : <></>
+        }
+
+        { this.props.unit.profiles['Wound Track'] ?
+          <>
+            <h5>Wound Track</h5>
+            <StatTable data={this.props.unit.profiles['Wound Track']}></StatTable>
           </> : <></>
         }
 
@@ -52,17 +61,30 @@ export class Unit extends React.Component<UnitProps> {
           </> : <></>
         }
 
+        { this.props.unit.profiles.Abilities ?
+          <>
+          <h5>Abilities</h5>
+          <StatTable data={ this.props.unit.profiles.Abilities } nameCell={true}></StatTable>
+          </> : <></>
+        }
+
+        { this.props.unit.selections.Abilities ?
+          <>
+          <h5>Selection Abilities</h5>
+          <StatTable data={this.props.unit.selections.Abilities} nameCell={true}></StatTable>
+          </> : <></>
+        }
+
         { Object.keys(this.props.unit.profiles).map((profileKey: string) => {
             return (
-              profileKey !== 'Unit' ?
+              !this.ignoreList.includes(profileKey) ?
               <>
                 <h5>{ profileKey }</h5>
                 { this.props.unit.profiles[profileKey].length === 1 ?
                   <StatTable data={this.props.unit.profiles[profileKey]}></StatTable> :
                   <StatTable data={this.props.unit.profiles[profileKey]} nameCell={true}></StatTable>
                 }
-              </> :
-              <></>
+              </> : <></>
             )
           })
         }
