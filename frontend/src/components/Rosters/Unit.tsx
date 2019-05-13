@@ -1,5 +1,6 @@
 import React from 'react'
 import { StatTable } from './StatTable'
+import { Keywords } from './Keywords'
 
 interface UnitProps {
   unit : {
@@ -9,7 +10,8 @@ interface UnitProps {
     profiles: {
       [key :string]: Profile[]
     },
-    selections: any
+    selections: any,
+    categories: Keyword[]
   }
 }
 
@@ -25,6 +27,11 @@ export type Characteristic = {
   value: string
 }
 
+export type Keyword = {
+  name: string,
+  primary: string
+}
+
 export class Unit extends React.Component<UnitProps> {
   private readonly ignoreList: string[] = ['Unit', 'Wound Track', 'Psychic Power', 'Abilities']
 
@@ -32,62 +39,65 @@ export class Unit extends React.Component<UnitProps> {
     return (
       <>
         <h2>{ this.props.unit.meta.name }</h2>
-
+        <Keywords keywords={this.props.unit.categories}></Keywords>
         { this.props.unit.profiles.Unit ?
           <>
-            <h5>Unit</h5>
-            <StatTable data={this.props.unit.profiles.Unit}></StatTable>
+            <StatTable data={this.props.unit.profiles.Unit}
+              heading='Unit'></StatTable>
           </> : <></>
         }
 
         { this.props.unit.profiles['Wound Track'] ?
           <>
-            <h5>Wound Track</h5>
-            <StatTable data={this.props.unit.profiles['Wound Track']}></StatTable>
+            <StatTable data={this.props.unit.profiles['Wound Track']}
+              heading='Wound Track'></StatTable>
           </> : <></>
         }
 
         { this.props.unit.selections.Weapon ?
           <>
-          <h5>Weapons</h5>
-          <StatTable data={this.props.unit.selections.Weapon} nameCell={true}></StatTable>
+          <StatTable data={this.props.unit.selections.Weapon} 
+            heading='Weapons'
+            nameCell={true}></StatTable>
           </> : <></>
         }
 
         { this.props.unit.selections['Psychic Power'] ?
           <>
-          <h5>Psychic Powers</h5>
-          <StatTable data={this.props.unit.selections['Psychic Power']} nameCell={true}></StatTable>
+          <StatTable data={this.props.unit.selections['Psychic Power']}
+            heading='Psychic Powers'
+            nameCell={true}></StatTable>
           </> : <></>
         }
 
         { this.props.unit.profiles.Abilities ?
           <>
-          <h5>Abilities</h5>
-          <StatTable data={ this.props.unit.profiles.Abilities } nameCell={true}></StatTable>
+          <StatTable data={ this.props.unit.profiles.Abilities }
+            heading='Abilities'
+            nameCell={true}></StatTable>
           </> : <></>
         }
 
         { this.props.unit.selections.Abilities ?
           <>
-          <h5>Selection Abilities</h5>
-          <StatTable data={this.props.unit.selections.Abilities} nameCell={true}></StatTable>
+          <StatTable data={this.props.unit.selections.Abilities}
+            heading='Selection Abilities'
+            nameCell={true}></StatTable>
           </> : <></>
         }
 
         { Object.keys(this.props.unit.profiles).map((profileKey: string) => {
-            return (
-              !this.ignoreList.includes(profileKey) ?
-              <>
-                <h5>{ profileKey }</h5>
-                { this.props.unit.profiles[profileKey].length === 1 ?
-                  <StatTable data={this.props.unit.profiles[profileKey]}></StatTable> :
-                  <StatTable data={this.props.unit.profiles[profileKey]} nameCell={true}></StatTable>
-                }
-              </> : <></>
-            )
-          })
-        }
+          return (
+            !this.ignoreList.includes(profileKey) ?
+            <>
+              <h5>{ profileKey }</h5>
+              { this.props.unit.profiles[profileKey].length === 1 ?
+                <StatTable data={this.props.unit.profiles[profileKey]}></StatTable> :
+                <StatTable data={this.props.unit.profiles[profileKey]} nameCell={true}></StatTable>
+              }
+            </> : <></>
+          )
+        })}
       </>
     )
   }

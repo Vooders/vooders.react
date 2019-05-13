@@ -4,6 +4,7 @@ import { Profile } from './Unit'
 
 interface StatTableProps {
   data: Profile[],
+  heading?: string,
   nameCell?: boolean
 }
 
@@ -11,6 +12,9 @@ export class StatTable extends React.Component<StatTableProps> {
   render () {
     return (
       <>
+        { this.props.heading ?
+          <h5>{ this.props.heading }</h5> : <></>
+        }
         <Table bordered>
           <thead>
             { this.props.nameCell ? <th></th> : <></> }
