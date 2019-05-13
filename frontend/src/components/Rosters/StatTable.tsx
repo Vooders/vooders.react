@@ -2,16 +2,16 @@ import React from 'react'
 import { Table } from 'react-bootstrap'
 import { Profile } from './Unit'
 
-interface HorizontalTableProps {
+interface StatTableProps {
   data: Profile[],
   nameCell?: boolean
 }
 
-export class HorizontalTable extends React.Component<HorizontalTableProps> {
+export class StatTable extends React.Component<StatTableProps> {
   render () {
     return (
       <>
-        <Table>
+        <Table bordered>
           <thead>
             { this.props.nameCell ? <th></th> : <></> }
             {this.props.data[0].characteristics.map((characteristic) => {

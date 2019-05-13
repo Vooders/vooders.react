@@ -1,6 +1,5 @@
 import React from 'react'
-import { HorizontalTable } from './HorizontalTable'
-import { VerticalTable } from './VerticalTable'
+import { StatTable } from './StatTable'
 
 interface UnitProps {
   unit : {
@@ -35,21 +34,21 @@ export class Unit extends React.Component<UnitProps> {
         { this.props.unit.profiles.Unit ?
           <>
             <h5>Unit</h5>
-            <HorizontalTable data={this.props.unit.profiles.Unit}></HorizontalTable>
+            <StatTable data={this.props.unit.profiles.Unit}></StatTable>
           </> : <></>
         }
 
         { this.props.unit.selections.Weapon ?
           <>
           <h5>Weapons</h5>
-          <HorizontalTable data={this.props.unit.selections.Weapon} nameCell={true}></HorizontalTable>
+          <StatTable data={this.props.unit.selections.Weapon} nameCell={true}></StatTable>
           </> : <></>
         }
 
         { this.props.unit.selections['Psychic Power'] ?
           <>
           <h5>Psychic Powers</h5>
-          <HorizontalTable data={this.props.unit.selections['Psychic Power']} nameCell={true}></HorizontalTable>
+          <StatTable data={this.props.unit.selections['Psychic Power']} nameCell={true}></StatTable>
           </> : <></>
         }
 
@@ -59,8 +58,8 @@ export class Unit extends React.Component<UnitProps> {
               <>
                 <h5>{ profileKey }</h5>
                 { this.props.unit.profiles[profileKey].length === 1 ?
-                  <HorizontalTable data={this.props.unit.profiles[profileKey]}></HorizontalTable> :
-                  <VerticalTable data={this.props.unit.profiles[profileKey]}></VerticalTable>
+                  <StatTable data={this.props.unit.profiles[profileKey]}></StatTable> :
+                  <StatTable data={this.props.unit.profiles[profileKey]} nameCell={true}></StatTable>
                 }
               </> :
               <></>
