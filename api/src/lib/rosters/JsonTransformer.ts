@@ -96,13 +96,10 @@ export class JsonTransformer {
     const base: any = {}
     const sorted = immer(base, (draft: any) => {
       selectionsArray.forEach((selections: any) => {
-        const keys = Object.keys(selections.profiles)
-        // console.log('keys:', keys)
-        keys.forEach((key) => {
+        Object.keys(selections.profiles).forEach((key) => {
           if (!draft[key]) {
             draft[key] = []
           }
-          // console.log('selection:', selections.profiles[key])
           selections.profiles[key].forEach((selection: any) => {
             draft[key].push(selection)
           })
