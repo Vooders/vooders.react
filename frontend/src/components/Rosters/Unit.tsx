@@ -11,7 +11,7 @@ interface UnitProps {
       [key :string]: Profile[]
     },
     selections: any,
-    categories: Keyword[]
+    categories: any
   }
 }
 
