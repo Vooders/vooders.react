@@ -14,7 +14,7 @@ export class App extends React.Component {
     return (
       <Router>
         <>
-          <NavBar name={siteName} />
+          <NavBar name={siteName}/>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/test' component={RouterTest} />

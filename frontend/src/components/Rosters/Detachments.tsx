@@ -16,7 +16,7 @@ export class Detachments extends React.Component<DetachmentProps> {
     return ( 
       <Tab.Container id="left-tabs-example" defaultActiveKey="key00">
         <Row>
-          <Col sm={3}>
+          <Col sm={3} className='scrollable'>
             {this.props.detachments.map((detachment: detachment, detachmentIndex) => {
               return (
                 <>
@@ -44,7 +44,7 @@ export class Detachments extends React.Component<DetachmentProps> {
               )
             })}
           </Col>
-          <Col sm={9}>
+          <Col sm={9} className='scrollable'>
             {this.props.detachments.map((detachment: detachment, detachmentIndex) => {
               return (
                 <Tab.Content>
