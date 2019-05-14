@@ -33,29 +33,11 @@ export class JsonTransformer {
     })
   }
 
-  private static transformCategories (categoriesArray: any[]) {
-    return categoriesArray.map((category: any) =>{
-      return {
-        name: category.$.name,
-        primary: category.$.primary
-      }
-    })
-  }
-
   private static transformCosts (costsArray: any[]) {
     return costsArray.map((cost: any) => {
       return {
         name: cost.$.name,
         value: cost.$.value
-      }
-    })
-  }
-
-  private static transformCharacteristics (characteristicsArray: any[]) {
-    return characteristicsArray.map((characteristic: any) => {
-      return {
-        name: characteristic.$.name,
-        value: characteristic.$.value
       }
     })
   }
@@ -77,6 +59,36 @@ export class JsonTransformer {
       }
     })
     return this.sortProfiles(reduced)
+  }
+
+  private static transformCharacteristics (characteristicsArray: any[]) {
+    return characteristicsArray.map((characteristic: any) => {
+      return {
+        name: characteristic.$.name,
+        value: characteristic.$.value
+      }
+    })
+  }
+
+  private static transformCategories (characteristicsArray: any[]) {
+    const base: any = {
+      primary: [],
+      faction: [],
+      others: []
+    }
+
+    return immer(base, (draft: any) => {
+      characteristicsArray.forEach((characteristic: any) => {
+        if (characteristic.$.primary === 'true') {
+          draft.primary.push(characteristic.$.name)
+        } else if (characteristic.$.name.includes('Faction:')) {
+          draft.faction.push(characteristic.$.name.split(':')[1].trim())
+        } else {
+          draft.others.push(characteristic.$.name)
+        }
+      })
+      draft.faction.reverse()
+    })
   }
 
   private static sortProfiles (profileArray: any[]) {

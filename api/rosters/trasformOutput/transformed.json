@@ -72,12 +72,13 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "No Force Org Slot",
-              "primary": "true"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "No Force Org Slot"
+            ],
+            "faction": [],
+            "others": []
+          }
         },
         {
           "meta": {
@@ -387,40 +388,22 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "HQ",
-              "primary": "true"
-            },
-            {
-              "name": "Cavalry",
-              "primary": "false"
-            },
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Herald of Nurgle",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "HQ"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Cavalry",
+              "Character",
+              "Plaguebearer",
+              "Herald of Nurgle"
+            ]
+          }
         },
         {
           "meta": {
@@ -900,36 +883,21 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "HQ",
-              "primary": "true"
-            },
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Monster",
-              "primary": "false"
-            },
-            {
-              "name": "Psyker",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "HQ"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Character",
+              "Monster",
+              "Psyker"
+            ]
+          }
         },
         {
           "meta": {
@@ -1075,32 +1043,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Troops",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Nurglings",
-              "primary": "false"
-            },
-            {
-              "name": "Swarm",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Troops"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Nurglings",
+              "Swarm"
+            ]
+          }
         },
         {
           "meta": {
@@ -1246,32 +1202,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Troops",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Nurglings",
-              "primary": "false"
-            },
-            {
-              "name": "Swarm",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Troops"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Nurglings",
+              "Swarm"
+            ]
+          }
         },
         {
           "meta": {
@@ -1417,32 +1361,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Troops",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Nurglings",
-              "primary": "false"
-            },
-            {
-              "name": "Swarm",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Troops"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Nurglings",
+              "Swarm"
+            ]
+          }
         }
       ]
     },
@@ -1499,12 +1431,13 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "No Force Org Slot",
-              "primary": "true"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "No Force Org Slot"
+            ],
+            "faction": [],
+            "others": []
+          }
         },
         {
           "meta": {
@@ -1749,44 +1682,23 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "HQ",
-              "primary": "true"
-            },
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Infantry",
-              "primary": "false"
-            },
-            {
-              "name": "Psyker",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Herald of Nurgle",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "HQ"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Character",
+              "Infantry",
+              "Psyker",
+              "Plaguebearer",
+              "Herald of Nurgle"
+            ]
+          }
         },
         {
           "meta": {
@@ -2031,44 +1943,23 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "HQ",
-              "primary": "true"
-            },
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Infantry",
-              "primary": "false"
-            },
-            {
-              "name": "Psyker",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Herald of Nurgle",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "HQ"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Character",
+              "Infantry",
+              "Psyker",
+              "Plaguebearer",
+              "Herald of Nurgle"
+            ]
+          }
         },
         {
           "meta": {
@@ -2250,40 +2141,22 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "HQ",
-              "primary": "true"
-            },
-            {
-              "name": "Herald of Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Infantry",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "HQ"
+            ],
+            "faction": [
+              "Nurgle",
+              "Daemon",
+              "Chaos"
+            ],
+            "others": [
+              "Character",
+              "Herald of Nurgle",
+              "Infantry",
+              "Plaguebearer"
+            ]
+          }
         },
         {
           "meta": {
@@ -2536,40 +2409,22 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "HQ",
-              "primary": "true"
-            },
-            {
-              "name": "Herald of Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Infantry",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "HQ"
+            ],
+            "faction": [
+              "Nurgle",
+              "Daemon",
+              "Chaos"
+            ],
+            "others": [
+              "Character",
+              "Herald of Nurgle",
+              "Infantry",
+              "Plaguebearer"
+            ]
+          }
         },
         {
           "meta": {
@@ -2780,32 +2635,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Troops",
-              "primary": "true"
-            },
-            {
-              "name": "Infantry",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Troops"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Infantry",
+              "Plaguebearer"
+            ]
+          }
         },
         {
           "meta": {
@@ -3016,32 +2859,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Troops",
-              "primary": "true"
-            },
-            {
-              "name": "Infantry",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Troops"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Infantry",
+              "Plaguebearer"
+            ]
+          }
         },
         {
           "meta": {
@@ -3236,36 +3067,21 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Cavalry",
-              "primary": "false"
-            },
-            {
-              "name": "Fast Attack",
-              "primary": "true"
-            },
-            {
-              "name": "Fly",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Fast Attack"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Cavalry",
+              "Fly",
+              "Plaguebearer"
+            ]
+          }
         },
         {
           "meta": {
@@ -3602,28 +3418,19 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Heavy Support",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Vehicle",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Heavy Support"
+            ],
+            "faction": [
+              "Nurgle",
+              "Daemon",
+              "Chaos"
+            ],
+            "others": [
+              "Vehicle"
+            ]
+          }
         },
         {
           "meta": {
@@ -4118,40 +3925,22 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Monster",
-              "primary": "false"
-            },
-            {
-              "name": "Psyker",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Lord of War",
-              "primary": "true"
-            },
-            {
-              "name": "Titanic",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Lord of War"
+            ],
+            "faction": [
+              "Chaos",
+              "Nurgle",
+              "Daemon"
+            ],
+            "others": [
+              "Character",
+              "Monster",
+              "Psyker",
+              "Titanic"
+            ]
+          }
         },
         {
           "meta": {
@@ -4271,24 +4060,17 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Fortification",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Fortification"
+            ],
+            "faction": [
+              "Daemon",
+              "Nurgle",
+              "Chaos"
+            ],
+            "others": []
+          }
         }
       ]
     },
@@ -4345,12 +4127,13 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "No Force Org Slot",
-              "primary": "true"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "No Force Org Slot"
+            ],
+            "faction": [],
+            "others": []
+          }
         },
         {
           "meta": {
@@ -4597,40 +4380,22 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            },
-            {
-              "name": "Character",
-              "primary": "false"
-            },
-            {
-              "name": "Cavalry",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "HQ",
-              "primary": "true"
-            },
-            {
-              "name": "Herald of Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Nurgle",
-              "primary": "false"
-            },
-            {
-              "name": "Plaguebearer",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "HQ"
+            ],
+            "faction": [
+              "Nurgle",
+              "Daemon",
+              "Chaos"
+            ],
+            "others": [
+              "Character",
+              "Cavalry",
+              "Herald of Nurgle",
+              "Plaguebearer"
+            ]
+          }
         },
         {
           "meta": {
@@ -4776,32 +4541,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Beast",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Flesh Hound",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Khorne",
-              "primary": "false"
-            },
-            {
-              "name": "Elites",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Elites"
+            ],
+            "faction": [
+              "Chaos",
+              "Khorne",
+              "Daemon"
+            ],
+            "others": [
+              "Beast",
+              "Flesh Hound"
+            ]
+          }
         },
         {
           "meta": {
@@ -4947,32 +4700,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Beast",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Flesh Hound",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Khorne",
-              "primary": "false"
-            },
-            {
-              "name": "Elites",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Elites"
+            ],
+            "faction": [
+              "Chaos",
+              "Khorne",
+              "Daemon"
+            ],
+            "others": [
+              "Beast",
+              "Flesh Hound"
+            ]
+          }
         },
         {
           "meta": {
@@ -5118,32 +4859,20 @@
               "value": "0.0"
             }
           ],
-          "categories": [
-            {
-              "name": "Beast",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Daemon",
-              "primary": "false"
-            },
-            {
-              "name": "Flesh Hound",
-              "primary": "false"
-            },
-            {
-              "name": "Faction: Khorne",
-              "primary": "false"
-            },
-            {
-              "name": "Elites",
-              "primary": "true"
-            },
-            {
-              "name": "Faction: Chaos",
-              "primary": "false"
-            }
-          ]
+          "categories": {
+            "primary": [
+              "Elites"
+            ],
+            "faction": [
+              "Chaos",
+              "Khorne",
+              "Daemon"
+            ],
+            "others": [
+              "Beast",
+              "Flesh Hound"
+            ]
+          }
         }
       ]
     }
