@@ -4,7 +4,7 @@ export class JsonTransformer {
   static transform (data: any) {
     const rosData = data.roster
     return {
-      meta: rosData.$,
+      meta: this.pruneMeta(rosData.$),
       costs: this.transformCosts(rosData.costs[0].cost || []),
       detachments: this.transformDetachments(rosData.forces[0].force || []) 
     }
@@ -13,16 +13,17 @@ export class JsonTransformer {
   private static transformDetachments (forcesArray: any[]) {
     return forcesArray.map((force: any) => {
       return {
-        meta: force.$,
+        meta: this.pruneMeta(force.$),
         units: this.transformSelections(force.selections[0].selection || [])
       }
     })
   }
 
   private static transformSelections (selectionsArray: any[]): any[] {
-    return selectionsArray.map((selection) => {
+    return selectionsArray.map((sel) => {
+      const selection = this.addMissingKeys(sel)
       return {
-        meta: selection.$,
+        meta: this.pruneMeta(selection.$),
         rules: this.transformRules(selection.rules[0].rule || []),
         profiles: this.transformProfiles(selection.profiles[0].profile || []),
         selections: (selection.selections.length > 0) ? 
@@ -54,7 +55,7 @@ export class JsonTransformer {
   private static transformProfiles (profilesArray: any[]) {
     const reduced = profilesArray.map((profile: any) => {
       return {
-        meta: profile.$,
+        meta: this.pruneMeta(profile.$),
         characteristics: this.transformCharacteristics(profile.characteristics[0].characteristic || [])
       }
     })
@@ -63,9 +64,10 @@ export class JsonTransformer {
 
   private static transformCharacteristics (characteristicsArray: any[]) {
     return characteristicsArray.map((characteristic: any) => {
+      const value = characteristic.$.value || characteristic._
       return {
         name: characteristic.$.name,
-        value: characteristic.$.value
+        value
       }
     })
   }
@@ -95,10 +97,11 @@ export class JsonTransformer {
     const base: any = {}
     const sorted = immer(base, (draft: any) => {
       profileArray.forEach((profile: any) => {
-        if (!draft[profile.meta.profileTypeName]) {
-          draft[profile.meta.profileTypeName] = []
+        const key = profile.meta.profileTypeName || profile.meta.typeName
+        if (!draft[key]) {
+          draft[key] = []
         }
-        draft[profile.meta.profileTypeName].push(profile)
+        draft[key].push(profile)
       })
     })
     return sorted
@@ -119,5 +122,26 @@ export class JsonTransformer {
       })
     })
     return sorted
+  }
+
+  private static pruneMeta (meta: any) {
+    const keysToRemove = ['id', 'profileTypeId', 'gameSystemId', 'xmlns', 'entryId', 'catalogueId']
+    return Object.keys(meta).reduce((output: any, key: string) => {
+      if(!keysToRemove.includes(key)){
+        return {...output, [key]: meta[key]}
+      }
+      return output
+    }, {})
+  }
+
+  private static addMissingKeys (selection: any) {
+    const keysToAdd = ['$', 'rules', 'profiles', 'selections', 'costs', 'categories']
+    const keysPresent = Object.keys(selection)
+    return keysToAdd.reduce((output: any, key) => {
+      if(keysPresent.includes(key)) {
+        return {...output, [key]: selection[key]}
+      }
+      return {...output, [key]: [{}]}
+    }, {})
   }
 }
