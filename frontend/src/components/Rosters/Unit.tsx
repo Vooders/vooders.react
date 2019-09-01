@@ -34,7 +34,8 @@ export type Keyword = {
 
 export type UnitState = {
   models: any[],
-  weapons: any[]
+  weapons: any[],
+  abilities: any[]
 }
 
 export class Unit extends React.Component<UnitProps> {
@@ -44,7 +45,8 @@ export class Unit extends React.Component<UnitProps> {
 
   state: UnitState = {
     models: [],
-    weapons: []
+    weapons: [],
+    abilities: []
   }
 
   private readonly ignoreList: string[] = ['Unit', 'Wound Track', 'Psychic Power', 'Abilities']
@@ -72,10 +74,21 @@ export class Unit extends React.Component<UnitProps> {
       this.setState((state: UnitState) => {
         return {
           models: this.uniqueArrayByName([...state.models, ...this.props.unit.profiles.Unit]),
-          weapons: state.weapons
+          weapons: state.weapons,
+          abilities: state.abilities
         }
       })
     }
+
+    this.setState((state: UnitState): UnitState => {
+      const abilities = this.props.unit.profiles.Abilities || []
+      return {
+        models: state.models,
+        weapons: state.weapons,
+        abilities: this.uniqueArrayByName([...state.abilities, ...abilities])
+      }
+    })
+
     this.props.unit.selections.forEach((selection: any) => {
       if (selection.meta.type === 'model') {
         this.setState((state: UnitState) => {
@@ -83,7 +96,8 @@ export class Unit extends React.Component<UnitProps> {
           const unit = selection.profiles.Unit || []
           return {
             models: this.uniqueArrayByName([...state.models, ...unit]),
-            weapons: this.uniqueArrayByName([...state.weapons, ...modelWeapons])
+            weapons: this.uniqueArrayByName([...state.weapons, ...modelWeapons]),
+            abilities: state.abilities
           }
         })
       } else if (selection.meta.type === 'upgrade') {
@@ -91,7 +105,8 @@ export class Unit extends React.Component<UnitProps> {
         this.setState((state: UnitState) => {
           return {
             models: state.models,
-            weapons: this.uniqueArrayByName([...state.weapons, ...weapons])
+            weapons: this.uniqueArrayByName([...state.weapons, ...weapons]),
+            abilities: state.abilities
           }
         })
       }
@@ -133,13 +148,7 @@ export class Unit extends React.Component<UnitProps> {
           </> : <></>
         }
 
-        { this.props.unit.selections.Weapon ?
-          <>
-          <StatTable data={this.props.unit.selections.Weapon} 
-            heading='Weapons'
-            nameCell={true}></StatTable>
-          </> : <></>
-        }
+        
 
         { this.props.unit.selections['Psychic Power'] ?
           <>
@@ -149,12 +158,10 @@ export class Unit extends React.Component<UnitProps> {
           </> : <></>
         }
 
-        { this.props.unit.profiles.Abilities ?
-          <>
-          <StatTable data={ this.props.unit.profiles.Abilities }
+        { this.state.abilities.length > 0 ?
+          <StatTable data={this.state.abilities}
             heading='Abilities'
-            nameCell={true}></StatTable>
-          </> : <></>
+            nameCell={true}></StatTable> : <></>
         }
 
         { this.props.unit.selections.Abilities ?
