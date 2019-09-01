@@ -17,18 +17,20 @@ export class StatTable extends React.Component<StatTableProps> {
         }
         <Table bordered>
           <thead>
-            { this.props.nameCell ? <th></th> : <></> }
-            {this.props.data[0].characteristics.map((characteristic) => {
-              return <th>{characteristic.name}</th>
-            })}
+            <tr>
+              { this.props.nameCell ? <th></th> : <></> }
+              {this.props.data[0].characteristics.map((characteristic, index: number) => {
+                return <th key={`h${index}`}>{characteristic.name}</th>
+              })}
+            </tr>
           </thead>
           <tbody>
-            { this.props.data.map((bob: any) => {
+            { this.props.data.map((bob: any, rIndex: number) => {
               return (
-                <tr>
+                <tr key={`r${rIndex}`}>
                   { this.props.nameCell ? <th>{ bob.meta.name }</th> : <></> }
-                  { bob.characteristics.map((characteristic: any) => {
-                    return <td>{characteristic.value}</td>
+                  { bob.characteristics.map((characteristic: any, index: number) => {
+                    return <td key={`r${rIndex}c${index}`}>{characteristic.value}</td>
                   }) }
                 </tr>
               )

@@ -11,7 +11,7 @@ export class Roster extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:8080/roster/5cdb0346fd64f426e91a1404`)
+    axios.get(`http://localhost:8080/roster/5d6aa5bf99440b10312c703b`)
       .then(res => {
         const roster = res.data
         this.setState({ 
@@ -26,8 +26,8 @@ export class Roster extends React.Component {
     return (
       <Container>
         <h2>{ this.state.meta.name }</h2>
-        { this.state.costs.map((cost: any) => {
-          return <Badge pill variant="info">
+        { this.state.costs.map((cost: any, index: number) => {
+          return <Badge pill variant="info" key={index}>
             { cost.name }: { cost.value }
           </Badge> 
         }) }

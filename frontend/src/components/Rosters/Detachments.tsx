@@ -19,9 +19,8 @@ export class Detachments extends React.Component<DetachmentProps> {
           <Col sm={3} className='scrollable'>
             {this.props.detachments.map((detachment: detachment, detachmentIndex) => {
               return (
-                <>
+                <div key={detachmentIndex}>
                   <OverlayTrigger
-                    key={detachmentIndex}
                     placement='top'
                     overlay={
                       <Tooltip id={`tooltip-${detachmentIndex}`}>
@@ -29,28 +28,28 @@ export class Detachments extends React.Component<DetachmentProps> {
                       </Tooltip>
                     }
                   >
-                    <h5>{detachment.meta.name}</h5>
+                  <h5>{detachment.meta.name}</h5>
                   </OverlayTrigger>
                   { detachment.units.map((unit: any, index) => {
                     return (
-                      <Nav variant="pills" className="flex-column">
+                      <Nav variant="pills" className="flex-column" key={index}>
                         <Nav.Item>
                           <Nav.Link eventKey={`key${detachmentIndex}${index}`}>{ unit.meta.name }</Nav.Link>
                         </Nav.Item>
                       </Nav>
                     )
                   }) }
-                </>
+                </div>
               )
             })}
           </Col>
           <Col sm={9} className='scrollable'>
             {this.props.detachments.map((detachment: detachment, detachmentIndex) => {
               return (
-                <Tab.Content>
+                <Tab.Content key={detachmentIndex}>
                   { detachment.units.map((unit: any, index) => {
                     return (
-                      <Tab.Pane eventKey={`key${detachmentIndex}${index}`}>
+                      <Tab.Pane eventKey={`key${detachmentIndex}${index}`} key={index}>
                         <Unit unit={unit} />
                       </Tab.Pane>
                     )
