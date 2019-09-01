@@ -51,7 +51,8 @@ export class Unit extends React.Component<UnitProps> {
 
   private getModelWeapons (selectionsArray: any[]) {
     return selectionsArray.reduce((output, selection) => {
-      return [...output, ...selection.profiles.Weapon]
+      const weapons = selection.profiles.Weapon || []
+      return [...output, ...weapons]
     }, [])
   }
 
@@ -79,16 +80,18 @@ export class Unit extends React.Component<UnitProps> {
       if (selection.meta.type === 'model') {
         this.setState((state: UnitState) => {
           const modelWeapons = this.getModelWeapons(selection.selections)
+          const unit = selection.profiles.Unit || []
           return {
-            models: this.uniqueArrayByName([...state.models, ...selection.profiles.Unit]),
+            models: this.uniqueArrayByName([...state.models, ...unit]),
             weapons: this.uniqueArrayByName([...state.weapons, ...modelWeapons])
           }
         })
       } else if (selection.meta.type === 'upgrade') {
+        const weapons = selection.profiles.Weapon || []
         this.setState((state: UnitState) => {
           return {
             models: state.models,
-            weapons: this.uniqueArrayByName([...state.weapons, ...selection.profiles.Weapon])
+            weapons: this.uniqueArrayByName([...state.weapons, ...weapons])
           }
         })
       }

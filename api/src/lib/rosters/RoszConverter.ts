@@ -9,7 +9,7 @@ const dbName = 'api'
 
 const dir = process.env['ROSTER_DIR']
 if (!dir) throw new Error('no dir set!')
-const filename = 'TestRoster.rosz'
+const filename = 'DG-Daemon2.5k.rosz'
 
 async function convertAndSave () {
   try {
