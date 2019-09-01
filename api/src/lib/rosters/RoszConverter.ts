@@ -15,7 +15,7 @@ async function convertAndSave () {
   try {
     const file = await decompress(`${dir}${filename}`)
     const json = await Xml2Json.parseBuffer(file[0].data)
-    console.log(JSON.stringify(json, null, 2))
+    // console.log(JSON.stringify(json, null, 2))
     const transformedJson = JsonTransformer.transform(json)
     // console.log(JSON.stringify(transformedJson, null, 2))
     insert(transformedJson)

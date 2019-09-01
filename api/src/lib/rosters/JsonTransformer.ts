@@ -6,7 +6,7 @@ export class JsonTransformer {
     return {
       meta: this.pruneMeta(rosData.$),
       costs: this.transformCosts(rosData.costs[0].cost || []),
-      detachments: this.transformDetachments(rosData.forces[0].force || []) 
+      detachments: this.transformDetachments(rosData.forces[0].force || [])
     }
   }
 
@@ -22,12 +22,13 @@ export class JsonTransformer {
   private static transformSelections (selectionsArray: any[]): any[] {
     return selectionsArray.map((sel) => {
       const selection = this.addMissingKeys(sel)
+      // console.log('selection', JSON.stringify(selection.profiles))
       return {
         meta: this.pruneMeta(selection.$),
         rules: this.transformRules(selection.rules[0].rule || []),
         profiles: this.transformProfiles(selection.profiles[0].profile || []),
-        selections: (selection.selections.length > 0) ? 
-          this.sortUnitSelections(this.transformSelections(selection.selections[0].selection || [])) : [],
+        selections: (selection.selections.length > 0) ?
+          this.transformSelections(selection.selections[0].selection || []) : [],
         costs: this.transformCosts(selection.costs[0].cost || []),
         categories: this.transformCategories(selection.categories[0].category || [])
       }
@@ -107,28 +108,11 @@ export class JsonTransformer {
     return sorted
   }
 
-  private static sortUnitSelections (selectionsArray: any[]) {
-    const base: any = {}
-    const sorted = immer(base, (draft: any) => {
-      selectionsArray.forEach((selections: any) => {
-        Object.keys(selections.profiles).forEach((key) => {
-          if (!draft[key]) {
-            draft[key] = []
-          }
-          selections.profiles[key].forEach((selection: any) => {
-            draft[key].push(selection)
-          })
-        })
-      })
-    })
-    return sorted
-  }
-
   private static pruneMeta (meta: any) {
-    const keysToRemove = ['id', 'profileTypeId', 'gameSystemId', 'xmlns', 'entryId', 'catalogueId']
+    const keysToRemove = ['id', 'profileTypeId', 'gameSystemId', 'xmlns', 'entryId', 'catalogueId', 'entryGroupId']
     return Object.keys(meta).reduce((output: any, key: string) => {
-      if(!keysToRemove.includes(key)){
-        return {...output, [key]: meta[key]}
+      if (!keysToRemove.includes(key)) {
+        return { ...output, [key]: meta[key] }
       }
       return output
     }, {})
@@ -138,10 +122,10 @@ export class JsonTransformer {
     const keysToAdd = ['$', 'rules', 'profiles', 'selections', 'costs', 'categories']
     const keysPresent = Object.keys(selection)
     return keysToAdd.reduce((output: any, key) => {
-      if(keysPresent.includes(key)) {
-        return {...output, [key]: selection[key]}
+      if (keysPresent.includes(key)) {
+        return { ...output, [key]: selection[key] }
       }
-      return {...output, [key]: [{}]}
+      return { ...output, [key]: [{}] }
     }, {})
   }
 }
