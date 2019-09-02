@@ -1,14 +1,10 @@
 import React from 'react'
 import { Tab, Row, Col, Nav, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { Unit } from './Unit'
+import { Detachment, Selection } from '../../types/Roster'
 
 interface DetachmentProps {
-  detachments: detachment[]
-}
-
-type detachment = {
-  meta: any,
-  units: any[]
+  detachments: Detachment[]
 }
 
 export class Detachments extends React.Component<DetachmentProps> {
@@ -17,7 +13,7 @@ export class Detachments extends React.Component<DetachmentProps> {
       <Tab.Container id="left-tabs-example" defaultActiveKey="key00">
         <Row>
           <Col sm={3} className='scrollable'>
-            {this.props.detachments.map((detachment: detachment, detachmentIndex) => {
+            {this.props.detachments.map((detachment: Detachment, detachmentIndex) => {
               return (
                 <div key={detachmentIndex}>
                   <OverlayTrigger
@@ -30,7 +26,7 @@ export class Detachments extends React.Component<DetachmentProps> {
                   >
                   <h5>{detachment.meta.name}</h5>
                   </OverlayTrigger>
-                  { detachment.units.map((unit: any, index) => {
+                  { detachment.units.map((unit: Selection, index) => {
                     return (
                       <Nav variant="pills" className="flex-column" key={index}>
                         <Nav.Item>
@@ -44,10 +40,10 @@ export class Detachments extends React.Component<DetachmentProps> {
             })}
           </Col>
           <Col sm={9} className='scrollable'>
-            {this.props.detachments.map((detachment: detachment, detachmentIndex) => {
+            {this.props.detachments.map((detachment: Detachment, detachmentIndex) => {
               return (
                 <Tab.Content key={detachmentIndex}>
-                  { detachment.units.map((unit: any, index) => {
+                  { detachment.units.map((unit: Selection, index) => {
                     return (
                       <Tab.Pane eventKey={`key${detachmentIndex}${index}`} key={index}>
                         <Unit unit={unit} />

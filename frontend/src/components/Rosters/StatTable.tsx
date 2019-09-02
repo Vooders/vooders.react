@@ -1,6 +1,6 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
-import { Profile, Characteristic } from './Unit'
+import { Profile, Characteristic } from '../../types/Roster'
 
 interface StatTableProps {
   data: Profile[],

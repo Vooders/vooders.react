@@ -1,53 +1,16 @@
 import React from 'react'
 import { StatTable } from './StatTable'
 import { Keywords } from './Keywords'
+import * as Roster from '../../types/Roster'
 
 interface UnitProps {
-  unit: Selection
-}
-
-export type Selection = {
-  meta: Meta,
-  rules: [],
-  profiles: {
-    [key: string]: Profile[]
-  },
-  selections: Selection[],
-  costs: Characteristic[],
-  categories: Categories
-}
-
-export type Meta = {
-  name: string,
-  number?: string,
-  type?: string
-}
-
-export type Profile = {
-  meta: Meta,
-  characteristics: Characteristic[]
-}
-
-export type Characteristic = {
-  name: string,
-  value: string
-}
-
-export type Categories = {
-  primary: string[],
-  faction: string[],
-  others: string[]
-}
-
-export type Keyword = {
-  name: string,
-  primary: string
+  unit: Roster.Selection
 }
 
 export type UnitState = {
-  models: Profile[],
-  weapons: Profile[],
-  abilities: Profile[]
+  models: Roster.Profile[],
+  weapons: Roster.Profile[],
+  abilities: Roster.Profile[]
 }
 
 export class Unit extends React.Component<UnitProps> {
@@ -63,27 +26,27 @@ export class Unit extends React.Component<UnitProps> {
 
   private readonly ignoreList: string[] = ['Unit', 'Wound Track', 'Psychic Power', 'Abilities']
 
-  private getModelWeapons (selectionsArray: Selection[]) {
-    return selectionsArray.reduce((output: Profile[], selection) => {
+  private getModelWeapons (selectionsArray: Roster.Selection[]) {
+    return selectionsArray.reduce((output: Roster.Profile[], selection) => {
       const weapons = selection.profiles.Weapon || []
       return [...output, ...weapons]
     }, [])
   }
 
-  private uniqueArrayByName (arr: Profile[]) {
+  private uniqueArrayByName (arr: Roster.Profile[]) {
     const names: any = {}
     return arr.filter((obj) => {
       if (names[obj.meta.name]) {
         return false
       }
-      names[obj.meta.name] = true;
+      names[obj.meta.name] = true
       return true
     })
   }
 
-  componentDidMount () {
+  componentDidMount (): void {
     if (this.props.unit.profiles.Unit) {
-      this.setState((state: UnitState) => {
+      this.setState((state: UnitState): UnitState => {
         const unit = this.props.unit.profiles.Unit || []
         return {
           models: this.uniqueArrayByName([...state.models, ...unit]),
@@ -102,9 +65,9 @@ export class Unit extends React.Component<UnitProps> {
       }
     })
 
-    this.props.unit.selections.forEach((selection: Selection) => {
+    this.props.unit.selections.forEach((selection: Roster.Selection) => {
       if (selection.meta.type === 'model') {
-        this.setState((state: UnitState) => {
+        this.setState((state: UnitState): UnitState => {
           const modelWeapons = this.getModelWeapons(selection.selections)
           const unit = selection.profiles.Unit || []
           return {
@@ -115,7 +78,7 @@ export class Unit extends React.Component<UnitProps> {
         })
       } else if (selection.meta.type === 'upgrade') {
         const weapons = selection.profiles.Weapon || []
-        this.setState((state: UnitState) => {
+        this.setState((state: UnitState): UnitState => {
           return {
             models: state.models,
             weapons: this.uniqueArrayByName([...state.weapons, ...weapons]),
@@ -127,7 +90,6 @@ export class Unit extends React.Component<UnitProps> {
   }
 
   render () {
-    console.log(this.props)
     return (
       <>
         <h2>{ this.props.unit.meta.name }</h2>

@@ -2,10 +2,19 @@ import React from 'react'
 import axios from 'axios'
 import { Badge, Container } from 'react-bootstrap'
 import { Detachments } from './Detachments'
+import { Meta, Characteristic, Detachment } from '../../types/Roster'
+
+type RosterState = {
+  meta: Meta,
+  costs: Characteristic[],
+  detachments: Detachment[]
+}
 
 export class Roster extends React.Component {
-  state: any = {
-    meta: {},
+  state: RosterState = {
+    meta: {
+      name: ''
+    },
     costs: [],
     detachments: []
   }
@@ -26,7 +35,7 @@ export class Roster extends React.Component {
     return (
       <Container>
         <h2>{ this.state.meta.name }</h2>
-        { this.state.costs.map((cost: any, index: number) => {
+        { this.state.costs.map((cost: Characteristic, index: number) => {
           return <Badge pill variant="info" key={index}>
             { cost.name }: { cost.value }
           </Badge> 
