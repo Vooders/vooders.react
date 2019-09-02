@@ -1,16 +1,17 @@
 import React from 'react'
 import { StatTable } from './StatTable'
 import { Keywords } from './Keywords'
-import * as Roster from '../../types/Roster'
+import { Profile, Selection } from '../../types/Roster'
 
 interface UnitProps {
-  unit: Roster.Selection
+  unit: Selection
 }
 
 export type UnitState = {
-  models: Roster.Profile[],
-  weapons: Roster.Profile[],
-  abilities: Roster.Profile[]
+  models: Profile[],
+  weapons: Profile[],
+  abilities: Profile[]
+  psychic: Profile[]
 }
 
 export class Unit extends React.Component<UnitProps> {
@@ -21,19 +22,20 @@ export class Unit extends React.Component<UnitProps> {
   state: UnitState = {
     models: [],
     weapons: [],
-    abilities: []
+    abilities: [],
+    psychic: []
   }
 
   private readonly ignoreList: string[] = ['Unit', 'Wound Track', 'Psychic Power', 'Abilities']
 
-  private getModelWeapons (selectionsArray: Roster.Selection[]) {
-    return selectionsArray.reduce((output: Roster.Profile[], selection) => {
+  private getModelWeapons (selectionsArray: Selection[]): Profile[] {
+    return selectionsArray.reduce((output: Profile[], selection) => {
       const weapons = selection.profiles.Weapon || []
       return [...output, ...weapons]
     }, [])
   }
 
-  private uniqueArrayByName (arr: Roster.Profile[]) {
+  private uniqueArrayByName (arr: Profile[]): Profile[] {
     const names: any = {}
     return arr.filter((obj) => {
       if (names[obj.meta.name]) {
@@ -51,7 +53,8 @@ export class Unit extends React.Component<UnitProps> {
         return {
           models: this.uniqueArrayByName([...state.models, ...unit]),
           weapons: state.weapons,
-          abilities: state.abilities
+          abilities: state.abilities,
+          psychic: state.psychic
         }
       })
     }
@@ -61,11 +64,36 @@ export class Unit extends React.Component<UnitProps> {
       return {
         models: state.models,
         weapons: state.weapons,
-        abilities: this.uniqueArrayByName([...state.abilities, ...abilities])
+        abilities: this.uniqueArrayByName([...state.abilities, ...abilities]),
+        psychic: state.psychic
       }
     })
 
-    this.props.unit.selections.forEach((selection: Roster.Selection) => {
+    this.props.unit.selections.forEach((selection: Selection) => {
+      if (selection.profiles['Psychic Power']) {
+        this.setState((state: UnitState): UnitState => {
+          const psychic = selection.profiles['Psychic Power'] || []
+          return {
+            models: state.psychic,
+            weapons: state.weapons,
+            abilities: state.abilities,
+            psychic: this.uniqueArrayByName([...state.psychic, ...psychic])
+          }
+        })
+      }
+
+      if (selection.profiles.Abilities) {
+        this.setState((state: UnitState): UnitState => {
+          const abilities = selection.profiles.Abilities || []
+          return {
+            models: state.psychic,
+            weapons: state.weapons,
+            abilities: this.uniqueArrayByName([...state.abilities, ...abilities]),
+            psychic: state.psychic
+          }
+        })
+      }
+
       if (selection.meta.type === 'model') {
         this.setState((state: UnitState): UnitState => {
           const modelWeapons = this.getModelWeapons(selection.selections)
@@ -73,7 +101,8 @@ export class Unit extends React.Component<UnitProps> {
           return {
             models: this.uniqueArrayByName([...state.models, ...unit]),
             weapons: this.uniqueArrayByName([...state.weapons, ...modelWeapons]),
-            abilities: state.abilities
+            abilities: state.abilities,
+            psychic: state.psychic
           }
         })
       } else if (selection.meta.type === 'upgrade') {
@@ -82,7 +111,8 @@ export class Unit extends React.Component<UnitProps> {
           return {
             models: state.models,
             weapons: this.uniqueArrayByName([...state.weapons, ...weapons]),
-            abilities: state.abilities
+            abilities: state.abilities,
+            psychic: state.psychic
           }
         })
       }
@@ -116,12 +146,10 @@ export class Unit extends React.Component<UnitProps> {
           </> : <></>
         }
 
-        { this.props.unit.profiles['Psychic Power'] ?
-          <>
-          <StatTable data={this.props.unit.profiles['Psychic Power']}
-            heading='Psychic Powers'
-            nameCell={true}></StatTable>
-          </> : <></>
+        { this.state.psychic.length > 0 ?
+          <StatTable data={this.state.psychic}
+            heading='psy'
+            nameCell={true}></StatTable> : <></>
         }
 
         { this.state.abilities.length > 0 ?
