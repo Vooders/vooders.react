@@ -3,22 +3,28 @@ import { StatTable } from './StatTable'
 import { Keywords } from './Keywords'
 
 interface UnitProps {
-  unit : {
-    meta: {
-      name: string
-    },
-    profiles: {
-      [key :string]: Profile[]
-    },
-    selections: any,
-    categories: any
-  }
+  unit: Selection
+}
+
+export type Selection = {
+  meta: Meta,
+  rules: [],
+  profiles: {
+    [key: string]: Profile[]
+  },
+  selections: Selection[],
+  costs: Characteristic[],
+  categories: Categories
+}
+
+export type Meta = {
+  name: string,
+  number?: string,
+  type?: string
 }
 
 export type Profile = {
-  meta: {
-    name: string
-  },
+  meta: Meta,
   characteristics: Characteristic[]
 }
 
@@ -27,15 +33,21 @@ export type Characteristic = {
   value: string
 }
 
+export type Categories = {
+  primary: string[],
+  faction: string[],
+  others: string[]
+}
+
 export type Keyword = {
   name: string,
   primary: string
 }
 
 export type UnitState = {
-  models: any[],
-  weapons: any[],
-  abilities: any[]
+  models: Profile[],
+  weapons: Profile[],
+  abilities: Profile[]
 }
 
 export class Unit extends React.Component<UnitProps> {
@@ -51,14 +63,14 @@ export class Unit extends React.Component<UnitProps> {
 
   private readonly ignoreList: string[] = ['Unit', 'Wound Track', 'Psychic Power', 'Abilities']
 
-  private getModelWeapons (selectionsArray: any[]) {
-    return selectionsArray.reduce((output, selection) => {
+  private getModelWeapons (selectionsArray: Selection[]) {
+    return selectionsArray.reduce((output: Profile[], selection) => {
       const weapons = selection.profiles.Weapon || []
       return [...output, ...weapons]
     }, [])
   }
 
-  private uniqueArrayByName (arr: any[]) {
+  private uniqueArrayByName (arr: Profile[]) {
     const names: any = {}
     return arr.filter((obj) => {
       if (names[obj.meta.name]) {
@@ -72,8 +84,9 @@ export class Unit extends React.Component<UnitProps> {
   componentDidMount () {
     if (this.props.unit.profiles.Unit) {
       this.setState((state: UnitState) => {
+        const unit = this.props.unit.profiles.Unit || []
         return {
-          models: this.uniqueArrayByName([...state.models, ...this.props.unit.profiles.Unit]),
+          models: this.uniqueArrayByName([...state.models, ...unit]),
           weapons: state.weapons,
           abilities: state.abilities
         }
@@ -89,7 +102,7 @@ export class Unit extends React.Component<UnitProps> {
       }
     })
 
-    this.props.unit.selections.forEach((selection: any) => {
+    this.props.unit.selections.forEach((selection: Selection) => {
       if (selection.meta.type === 'model') {
         this.setState((state: UnitState) => {
           const modelWeapons = this.getModelWeapons(selection.selections)
@@ -134,13 +147,6 @@ export class Unit extends React.Component<UnitProps> {
             nameCell={true}></StatTable> : <></>
         }
 
-        { this.props.unit.selections.Unit ?
-          <>
-            <StatTable data={this.props.unit.selections.Unit}
-              heading='' nameCell={true}></StatTable>
-          </> : <></>
-        }
-
         { this.props.unit.profiles['Wound Track'] ?
           <>
             <StatTable data={this.props.unit.profiles['Wound Track']}
@@ -148,11 +154,9 @@ export class Unit extends React.Component<UnitProps> {
           </> : <></>
         }
 
-        
-
-        { this.props.unit.selections['Psychic Power'] ?
+        { this.props.unit.profiles['Psychic Power'] ?
           <>
-          <StatTable data={this.props.unit.selections['Psychic Power']}
+          <StatTable data={this.props.unit.profiles['Psychic Power']}
             heading='Psychic Powers'
             nameCell={true}></StatTable>
           </> : <></>
@@ -162,14 +166,6 @@ export class Unit extends React.Component<UnitProps> {
           <StatTable data={this.state.abilities}
             heading='Abilities'
             nameCell={true}></StatTable> : <></>
-        }
-
-        { this.props.unit.selections.Abilities ?
-          <>
-          <StatTable data={this.props.unit.selections.Abilities}
-            heading='Selection Abilities'
-            nameCell={true}></StatTable>
-          </> : <></>
         }
 
         { Object.keys(this.props.unit.profiles).map((profileKey: string, index: number) => {

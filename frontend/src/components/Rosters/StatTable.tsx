@@ -1,6 +1,6 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
-import { Profile } from './Unit'
+import { Profile, Characteristic } from './Unit'
 
 interface StatTableProps {
   data: Profile[],
@@ -25,11 +25,11 @@ export class StatTable extends React.Component<StatTableProps> {
             </tr>
           </thead>
           <tbody>
-            { this.props.data.map((bob: any, rIndex: number) => {
+            { this.props.data.map((bob: Profile, rIndex: number) => {
               return (
                 <tr key={`r${rIndex}`}>
                   { this.props.nameCell ? <th>{ bob.meta.name }</th> : <></> }
-                  { bob.characteristics.map((characteristic: any, index: number) => {
+                  { bob.characteristics.map((characteristic: Characteristic, index: number) => {
                     return <td key={`r${rIndex}c${index}`}>{characteristic.value}</td>
                   }) }
                 </tr>
