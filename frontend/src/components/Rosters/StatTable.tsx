@@ -3,9 +3,9 @@ import { Table } from 'react-bootstrap'
 import { Profile, Characteristic } from '../../types/Roster'
 
 interface StatTableProps {
-  data: Profile[],
-  heading?: string,
-  nameCell?: boolean
+  readonly data: Profile[],
+  readonly heading?: string,
+  readonly nameCell?: boolean
 }
 
 export class StatTable extends React.Component<StatTableProps> {

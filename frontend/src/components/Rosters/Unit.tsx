@@ -4,14 +4,14 @@ import { Keywords } from './Keywords'
 import { Profile, Selection } from '../../types/Roster'
 
 interface UnitProps {
-  unit: Selection
+  readonly unit: Selection
 }
 
 export type UnitState = {
-  models: Profile[],
-  weapons: Profile[],
-  abilities: Profile[]
-  psychic: Profile[]
+  readonly models: Profile[],
+  readonly weapons: Profile[],
+  readonly abilities: Profile[]
+  readonly psychic: Profile[]
 }
 
 export class Unit extends React.Component<UnitProps> {
@@ -74,7 +74,7 @@ export class Unit extends React.Component<UnitProps> {
         this.setState((state: UnitState): UnitState => {
           const psychic = selection.profiles['Psychic Power'] || []
           return {
-            models: state.psychic,
+            models: state.models,
             weapons: state.weapons,
             abilities: state.abilities,
             psychic: this.uniqueArrayByName([...state.psychic, ...psychic])
@@ -86,7 +86,7 @@ export class Unit extends React.Component<UnitProps> {
         this.setState((state: UnitState): UnitState => {
           const abilities = selection.profiles.Abilities || []
           return {
-            models: state.psychic,
+            models: state.models,
             weapons: state.weapons,
             abilities: this.uniqueArrayByName([...state.abilities, ...abilities]),
             psychic: state.psychic
@@ -126,11 +126,9 @@ export class Unit extends React.Component<UnitProps> {
         <Keywords keywords={this.props.unit.categories}></Keywords>
 
         { this.state.models.length > 0 ?
-          <>
-            <StatTable data={this.state.models}
-              heading=''
-              nameCell={true}></StatTable>
-          </> : <></>
+          <StatTable data={this.state.models}
+            heading=''
+            nameCell={true}></StatTable> : <></>
         }
 
         { this.state.weapons.length > 0 ?
@@ -148,7 +146,7 @@ export class Unit extends React.Component<UnitProps> {
 
         { this.state.psychic.length > 0 ?
           <StatTable data={this.state.psychic}
-            heading='psy'
+            heading='Psychic Powers'
             nameCell={true}></StatTable> : <></>
         }
 

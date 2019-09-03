@@ -2,7 +2,7 @@ import React from 'react'
 import { Categories } from '../../types/Roster'
 
 export interface KeywordsProps {
-  keywords: Categories
+  readonly keywords: Categories
 }
 
 export class Keywords extends React.Component<KeywordsProps> {

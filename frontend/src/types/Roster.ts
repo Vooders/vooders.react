@@ -1,48 +1,49 @@
 export type Selection = {
-  meta: Meta,
-  rules: Rule[],
-  profiles: {
-    [key: string]: Profile[]
+  readonly meta: Meta,
+  readonly rules: Rule[],
+  readonly profiles: {
+    readonly [key: string]: Profile[]
   },
-  selections: Selection[],
-  costs: Characteristic[],
-  categories: Categories
+  readonly selections: Selection[],
+  readonly costs: Characteristic[],
+  readonly categories: Categories
 }
 
 export type Meta = {
-  name: string,
-  number?: string,
-  type?: string,
-  catalogueName?: string
+  readonly name: string,
+  readonly number?: string,
+  readonly type?: string,
+  readonly catalogueName?: string
 }
 
 export type Profile = {
-  meta: Meta,
-  characteristics: Characteristic[]
+  readonly meta: Meta,
+  readonly characteristics: Characteristic[]
 }
 
 export type Characteristic = {
-  name: string,
-  value: string
+  readonly name: string,
+  readonly value: string
 }
 
 export type Categories = {
-  primary: string[],
-  faction: string[],
-  others: string[]
+  readonly primary: string[],
+  readonly faction: string[],
+  readonly others: string[]
 }
 
 export type Keyword = {
-  name: string,
-  primary: string
+  readonly name: string,
+  readonly primary: string
 }
 
 export type Rule = {
-  name: string,
-  description: string
+  readonly name: string,
+  readonly description: string
 }
 
 export type Detachment = {
-  meta: Meta,
-  units: Selection[]
+  readonly meta: Meta,
+  readonly units: Selection[],
+  readonly abilities?: Profile[]
 }

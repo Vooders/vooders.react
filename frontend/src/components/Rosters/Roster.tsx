@@ -5,9 +5,9 @@ import { Detachments } from './Detachments'
 import { Meta, Characteristic, Detachment } from '../../types/Roster'
 
 type RosterState = {
-  meta: Meta,
-  costs: Characteristic[],
-  detachments: Detachment[]
+  readonly meta: Meta,
+  readonly costs: Characteristic[],
+  readonly detachments: Detachment[]
 }
 
 export class Roster extends React.Component {
